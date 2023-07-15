@@ -361,3 +361,19 @@ tr{
      display: none;
     }
   }
+
+@media screen and (max-width: 767px) {
+    #tablaHorario .col-xl-6 {
+      flex: 100%;
+      max-width: 100%;
+    }
+  
+    #tablaTarifa {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    #tablaTarifa tr th {
+      font-size: 14px;
+    }
+  }
