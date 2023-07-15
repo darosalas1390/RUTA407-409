@@ -1,0 +1,38 @@
+#TitulosPagina h1{
+    color: yellow;
+    margin-top: 20px;
+    margin-left: 10%;
+}
+
+#enviodeCorreo{
+    width: 50%; 
+    margin-top: 5%;
+    background-color: aliceblue;
+    border-radius: 16px;
+    max-height: 600px;
+    text-align: center;
+    
+}
+
+#TitulosPagina h3{
+    text-align: center;
+    color: white;
+}
+
+#TitulosPagina p{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+#parrafoCurriculum p{
+    color: white;
+    font-size: 25px;
+
+}
+
+#parrafoCurriculum {
+    margin-top: 20px;
+
+}
+

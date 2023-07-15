@@ -1,0 +1,76 @@
+.flex-direction-flexFlow{
+    display: flex;
+    flex-flow: row wrap;
+    
+}
+
+
+
+.flex-direction-flexFlow > .imagenBus{   
+    display: flex;
+    flex-direction: column;
+    width: 300PX;
+    height: 400px;
+    max-height: 400px;
+    max-width: 300px;
+    line-height: 75px;
+    margin: 0 auto;
+    margin-top: 100px;
+    border: 1px solid transparent;
+    border-image: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.8)) 0;
+    box-shadow: 0 0 50px rgba(102, 204, 255, 0.9), 0 0 50px rgba(102, 204, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.8); /* Ajusta el valor de "0.8" para cambiar la opacidad */
+    border-radius: 50px;
+    
+}
+
+.flex-direction-flexFlow > .imagenBus:hover{   
+    display: flex;
+    flex-direction: column; 
+    width: 302PX;
+    height: 402px;
+    max-height: 402px;
+    max-width: 302px;
+    line-height: 75px;
+    margin: 0 auto;
+    border: 1px solid transparent;
+    border-image: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.8)) 0;
+    box-shadow: 0 0 50px rgba(102, 204, 255, 0.9), 0 0 50px rgba(102, 204, 255, 0.5);
+    margin-top: 100px;
+    background-color: rgba(0, 0, 0, 0.8); /* Ajusta el valor de "0.8" para cambiar la opacidad */
+    border-radius: 50px;
+    transform: scale(1.1); /* Hace que la imagen se haga un poco más grande al pasar el mouse por encima */
+    
+}
+
+
+#tituloGaleria h1{
+    color: yellow;
+    margin-top: 20px;
+    margin-left: 10%;
+}
+
+#buses p{
+    color: white;
+    text-align: center;
+}
+
+.slide-container {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    height: 1000PX;
+    border-radius: 50PX;
+    border: 1px solid transparent;
+    border-image: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.8)) 0;
+    box-shadow: 0 0 50px rgba(102, 204, 255, 0.9), 0 0 50px rgba(102, 204, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.8); /* Ajusta el valor de "0.8" para cambiar la opacidad */
+    border-radius: 50px;
+    
+  }
+  
+  .slide-container img {
+    width: 100%;
+    height: auto;
+    margin-right: 20PX;
+  }
