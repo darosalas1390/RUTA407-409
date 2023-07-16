@@ -51,5 +51,11 @@
     transform: scale(1.1); /* Hace que la imagen se haga un poco más grande al pasar el mouse por encima */
   }
 
-  
+  @media screen and (max-width:1400px) {
+    #contSecundario h1 {
+      display: none;
+    }
+    
+   
+  } 
 
