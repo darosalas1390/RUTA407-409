@@ -92,3 +92,10 @@
   .imagenBus {
     animation: slideIn 3s ease-in-out;
   }
+
+@media screen and (max-width:768px) {
+    
+    #TodasLasUnidades{
+      margin-bottom: 60px;
+    }
+  }
