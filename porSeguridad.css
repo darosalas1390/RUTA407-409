@@ -39,3 +39,10 @@
     text-align: center;
     margin-top: 20px;
   }
+
+ @media screen and (max-width:768px) {
+    
+    #contSeguridadLista{
+      margin-bottom: 60px;
+    }
+  }
