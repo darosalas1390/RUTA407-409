@@ -35,4 +35,9 @@
     margin-top: 20px;
 
 }
-
+@media screen and (max-width:768px) {
+    
+    #enviodeCorreo{
+      margin-bottom: 60px;
+    }
+  }
