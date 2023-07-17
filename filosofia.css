@@ -41,4 +41,7 @@
     #contMision{
       margin-bottom: 60px;
     }
+    #contMision h3{
+      display: none;
+    }
   }
