@@ -112,7 +112,28 @@
             center: {lat: 10.0149958, lng: -84.0968643},
             zoom: 15
           });
-      
+            function getLocation() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+          alert("La geolocalización no es soportada por este navegador.");
+        }
+      }
+
+      function showPosition(position) {
+        var userLocation = {
+          lat: position.coords.latitude,
+          lng: position.coords.longitude
+        };
+
+        new google.maps.Marker({
+          position: userLocation,
+          map: map,
+          icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png"
+        });
+
+        map.setCenter(userLocation);
+      }
           // Agrega un marcador para cada punto de parada
           var puntosParada = [
             {lat: 10.0151466, lng: -84.0980234},
@@ -187,7 +208,8 @@
        </div>  
 
       <div id="mapSanRafaelSanJose" style="width: 100%; height: 600px;"></div>
-    
+      <button onclick="getLocation()">Mostrar mi ubicación</button>
+        
     </div>
 
 </div>
@@ -212,7 +234,28 @@
                     center: {lat: 9.9370108, lng: -84.0811006},
                     zoom: 15
                   });
-              
+               function getLocation() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+          alert("La geolocalización no es soportada por este navegador.");
+        }
+      }
+
+      function showPosition(position) {
+        var userLocation = {
+          lat: position.coords.latitude,
+          lng: position.coords.longitude
+        };
+
+        new google.maps.Marker({
+          position: userLocation,
+          map: map,
+          icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png"
+        });
+
+        map.setCenter(userLocation);
+      }             
                   // Agrega un marcador para cada punto de parada
                   var puntosParada = [
                     {lat: 9.9370108, lng: -84.0811006},
@@ -288,7 +331,7 @@
                </div>  
         
               <div id="mapSanJoseSanRafael" style="width: 100%; height: 600px;"></div>
-            
+            <button onclick="getLocation()">Mostrar mi ubicación</button>
             </div>
         
         </div>
