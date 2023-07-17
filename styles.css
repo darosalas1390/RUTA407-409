@@ -396,4 +396,7 @@ tr{
     #tablaTarifa tr th {
       font-size: 14px;
     }
+    #contPrincipal img{
+      height: 300px ;
+    }
   }
