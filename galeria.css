@@ -100,4 +100,9 @@
     #TodasLasUnidades{
       margin-bottom: 60px;
     }
+    #tituloGaleria h1{
+      color: yellow;
+      margin-top: 20px;
+      text-align: center;
+  }
   }
