@@ -55,7 +55,11 @@
     #contSecundario h1 {
       display: none;
     }
-    
-   
   } 
-
+ @media screen and (max-width:768px) {
+    #contLey7600 h1 {
+      margin-left: 10%;
+      color: yellow;
+    }
+    }
+  
