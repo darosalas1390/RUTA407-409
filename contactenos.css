@@ -41,4 +41,10 @@
       margin-bottom: 60px;
         width: 90%;
     }
+    #TitulosPagina h1{
+        color: yellow;
+        margin-top: 20px;
+        text-align: center;
+    }
+
   }
