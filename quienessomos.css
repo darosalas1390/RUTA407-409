@@ -52,4 +52,8 @@
     #contValores{
       margin-bottom: 60px;
     }
+    #contQuienesSomos h1{
+      text-align: center;
+      color: yellow;
+  }
   }
