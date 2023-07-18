@@ -44,4 +44,9 @@
     #contMision h3{
       display: none;
     }
+     #tituloFilosofia h1{
+      text-align: center;
+      color: yellow;
+  }
+
   }
