@@ -89,5 +89,10 @@
         height: 400PX;
         
     }
+    #tituloGaleria h1{
+      color: yellow;
+      margin-top: 20px;
+     text-align: center;
+  }
   }
   
