@@ -81,6 +81,13 @@
       .destacada {
         background-color: yellow;
       }
-
+@media screen and (max-width:768px) {
+    
+        #tituloTarifas h1{
+          color: yellow;
+            margin-top: 20px;
+           text-align: center;
+        }
+      }
 
       
