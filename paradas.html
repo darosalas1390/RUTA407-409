@@ -112,28 +112,7 @@
             center: {lat: 10.0149958, lng: -84.0968643},
             zoom: 15
           });
-            function getLocation() {
-        if (navigator.geolocation) {
-          navigator.geolocation.getCurrentPosition(showPosition);
-        } else {
-          alert("La geolocalización no es soportada por este navegador.");
-        }
-      }
-
-      function showPosition(position) {
-        var userLocation = {
-          lat: position.coords.latitude,
-          lng: position.coords.longitude
-        };
-
-        new google.maps.Marker({
-          position: userLocation,
-          map: map,
-          icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png"
-        });
-
-        map.setCenter(userLocation);
-      }
+            
           // Agrega un marcador para cada punto de parada
           var puntosParada = [
             {lat: 10.0151466, lng: -84.0980234},
@@ -195,12 +174,23 @@
           ];
       
           puntosParada.forEach(function(parada) {
-            new google.maps.Marker({
+            var marker =  new google.maps.Marker({
               position: parada,
-              map: map
+              map: map,
+              animation: google.maps.Animation.DROP
             });
-          });
+            // Agrega el evento de clic al marcador
+             marker.addListener('click', function() {
+                openWaze(parada);
+              });
+              });
         }
+
+          function openWaze(location) {
+            var wazeURL = 'https://www.waze.com/ul?ll=' + location.lat + ',' + location.lng + '&navigate=yes';
+            window.open(wazeURL, '_blank');
+          }
+
         window.addEventListener('load', initMap);
     </script>
        <div id="tituloMapa">
@@ -234,28 +224,7 @@
                     center: {lat: 9.9370108, lng: -84.0811006},
                     zoom: 15
                   });
-               function getLocation() {
-        if (navigator.geolocation) {
-          navigator.geolocation.getCurrentPosition(showPosition);
-        } else {
-          alert("La geolocalización no es soportada por este navegador.");
-        }
-      }
-
-      function showPosition(position) {
-        var userLocation = {
-          lat: position.coords.latitude,
-          lng: position.coords.longitude
-        };
-
-        new google.maps.Marker({
-          position: userLocation,
-          map: map,
-          icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png"
-        });
-
-        map.setCenter(userLocation);
-      }             
+              
                   // Agrega un marcador para cada punto de parada
                   var puntosParada = [
                     {lat: 9.9370108, lng: -84.0811006},
@@ -319,10 +288,19 @@
                   puntosParada.forEach(function(parada) {
                     new google.maps.Marker({
                       position: parada,
-                      map: map
+                      map: map,
+                      animation: google.maps.Animation.DROP
                     });
+                      // Agrega el evento de clic al marcador
+                        marker.addListener('click', function() {
+                        openWaze(parada);
+                      }); 
                   });
                 }
+                function openWaze(location) {
+            var wazeURL = 'https://www.waze.com/ul?ll=' + location.lat + ',' + location.lng + '&navigate=yes';
+            window.open(wazeURL, '_blank');
+          }
                 window.addEventListener('load', initMap);
             </script>
 
