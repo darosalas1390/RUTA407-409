@@ -48,4 +48,8 @@
     #contSeguridadLista h3{
         display: none;
       }
+      #contSeguridad h1{
+        text-align: center;
+        color: yellow;
+    }
   }
