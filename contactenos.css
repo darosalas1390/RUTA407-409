@@ -7,12 +7,12 @@
 #enviodeCorreo{
     width: 50%; 
     margin-top: 5%;
-    background-color: aliceblue;
-    border-radius: 16px;
-    max-height: 600px;
+    background-color:  rgba(0, 0, 0, 0.6); /* Ajusta el valor de "0.8" para cambiar la opacidad */
+    border-radius: 50px;
+    max-height: 650px;
     text-align: center;
-    
-}
+    color: white;
+    }
 
 #TitulosPagina h3{
     text-align: center;
