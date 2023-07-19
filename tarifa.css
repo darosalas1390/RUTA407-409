@@ -42,13 +42,14 @@
       padding: 10px;
       border-radius: 50%;
       transition: transform 0.2s ease; /* Agrega una transición suave */
-      
+      background-color: lime;
     }
   
     #contDescargaTarifa p {
       color: white;
-      font-size: 15px;
+      font-size: 17px;
     }
+    
     
     #contDescargaTarifa img:hover {
       transform: scale(1.1); /* Hace que la imagen se haga un poco más grande al pasar el mouse por encima */
