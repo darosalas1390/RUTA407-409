@@ -26,6 +26,16 @@
     border-radius: 50px;
 }
 
+.video-containerYouTube iframe{
+  border: 1px solid transparent;
+    border-image: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.8)) 0;
+    box-shadow: 0 0 10px #66ff6e77, 0 0 50px rgba(102, 204, 255, 0.8);
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Ajusta el valor de "0.8" para cambiar la opacidad */
+    border-radius: 50px;
+    height: 300px;
+}
+
 #descargaLey7600 .col-xl-4 {
   display: flex;
   flex-direction: column;
@@ -48,7 +58,6 @@
   font-size: 17px;
   
 }
-
   #descargaLey7600 img:hover {
     transform: scale(1.1); /* Hace que la imagen se haga un poco más grande al pasar el mouse por encima */
   }
@@ -58,11 +67,22 @@
       display: none;
     }
   } 
-
-@media screen and (max-width:768px) {
+  @media screen and (min-width:769px) {
+    .video-containerYouTube {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width:768px) {
     #contLey7600 h1 {
       text-align: center;
       color: yellow;
-
+      margin-left:0;
     }
+   
+.video-container video {
+  display: none;
+}
+
+
     }
