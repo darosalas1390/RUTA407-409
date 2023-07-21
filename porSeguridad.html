@@ -165,10 +165,16 @@
               const listaHTML = $("<ol class='list-group list-group-numbered'></ol>");
         
               // Agregar cada valor como un elemento de lista
-              seguridad.forEach(function(seguridades) {
-                listaHTML.append($("<li class='list-group-item'></li>").text(seguridades));
-              });
-        
+              seguridad.forEach(function(item) {
+                const listItem = $("<li class='list-group-item'></li>")
+                .text(item.seguridad)
+                .css({
+                 "background-color": "rgba(0, 0, 0, 0.7)", // Fondo negro transparente
+                 "color": "#08DAE4" // Texto en color
+        });
+        listaHTML.append(listItem);
+      });
+      
               // Reemplazar el contenido de #valoresContainer con la lista HTML generada
               $("#seguridadContainer").html(listaHTML);
             });
