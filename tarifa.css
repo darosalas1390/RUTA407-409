@@ -90,9 +90,18 @@
            text-align: center;
            margin-left: 0%;
         }
-  #tarifa{
-          font-size: 10px;
+        #tarifa{
+          font-size: 12px;
         }
+        #tituloTabla{
+          font-size: 15px;
+        }
+
+        #contDescargaTarifa .col-xl-4 {
+          margin-top: 0px;
+        }       
+
       }
+      
 
       
