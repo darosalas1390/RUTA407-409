@@ -162,20 +162,26 @@
      
      <div class="col-xl-4 col-xs-12">
  
-      <script>
+       <script>
         // Cargar el archivo JSON
         $.getJSON("json/mision.json", function(data) {
           // Obtener los valores del archivo JSON
-          const mision = data.mision;
-    
-          // Crear una lista HTML con los valores
+          const misiones = data.mision;
+      
+          // Crear una lista HTML con los valores y sus fondos
           const listaHTML = $("<ol class='list-group list-group-numbered'></ol>");
-    
+      
           // Agregar cada valor como un elemento de lista
-          mision.forEach(function(misiones) {
-            listaHTML.append($("<li class='list-group-item'></li>").text(misiones));
+          misiones.forEach(function(item) {
+            const listItem = $("<li class='list-group-item'></li>")
+              .text(item.mision)
+              .css({
+          "background-color": "rgba(0, 0, 0, 0.7)", // Fondo negro transparente
+          "color": "#08DAE4" // Texto en color
+        });
+            listaHTML.append(listItem);
           });
-    
+      
           // Reemplazar el contenido de #valoresContainer con la lista HTML generada
           $("#misionesContainer").html(listaHTML);
         });
