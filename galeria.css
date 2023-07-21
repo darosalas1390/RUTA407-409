@@ -59,6 +59,7 @@
 
 .imagenBus {
     position: relative;
+      align-items: center;
   }
   
   .imagenBus img {
