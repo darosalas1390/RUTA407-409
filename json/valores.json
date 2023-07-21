@@ -1,9 +1,9 @@
 {
   "valores": [
-    "Trabajo en equipo",
-    "Respeto",
-    "Desempeño",
-    "Honradez",
-    "Responsabilidad"
+    {"valor":"Trabajo en equipo","fondo":"black"},
+    {"valor":"Respeto","fondo":"black"},
+    {"valor":"Desempeno","fondo":"black"},
+    {"valor":"Honradez","fondo":"black"},
+    {"valor":"Responsabilidad","fondo":"black"}
   ]
 }
