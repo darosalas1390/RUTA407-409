@@ -1,12 +1,12 @@
 {
   "seguridad": [
-    "No se aceptan personas en estado de ebriedad o bajo efectos de drogas.",
-    "No llevar objetos o materiales peligrosos que puedan atentar o causar daños tanto al usuario como a la unidad.",
-    "Respetar los asientos preferenciales para personas con discapacidad, adulto mayor o mujeres embarazadas.",
-    "Respetar las paradas ya establecidas, no comprometa su seguridad, la del chofer y demás usuarios.",
-    "Respetar al chofer de cada unidad, ya que es quien es el responsable en el autobús.",
-    "No transporte de mascotas",
-    "No se permite viajar a personas con artículos que contengan material inflamable o explosivo dentro de nuestras unidades de servicio público."
-
+    {"seguridad": "No se aceptan personas en estado de ebriedad o bajo efectos de drogas.","fondo":"black"},
+    {"seguridad":"No llevar objetos o materiales peligrosos que puedan atentar o causar daños tanto al usuario como a la unidad.","fondo":"black"},
+    {"seguridad":"Respetar los asientos preferenciales para personas con discapacidad, adulto mayor o mujeres embarazadas.","fondo":"black"},
+    {"seguridad":  "Respetar las paradas ya establecidas, no comprometa su seguridad, la del chofer y demás usuarios.","fondo":"black"},
+    {"seguridad":"Respetar al chofer de cada unidad, ya que es quien es el responsable en el autobús.","fondo":"black"},
+    {"seguridad": "No transporte de mascotas","fondo":"black"},
+    {"seguridad":"No se permite viajar a personas con artículos que contengan material inflamable o explosivo dentro de nuestras unidades de servicio público.","fondo":"black"}
+    
   ]
 }
