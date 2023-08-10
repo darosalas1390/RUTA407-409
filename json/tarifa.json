@@ -1,0 +1,64 @@
+{
+  "tarifas": [
+    {
+      "ruta": "407",
+      "descripcion": "SAN JOSE - SANTO DOMINGO- SAN PABLO DE HEREDIA - EXT LA SUIZA - SAN RAFAEL",
+      "tarifaAjustada": "-",
+      "adultoMayor": "-"
+    },
+    {
+      "ruta": "",
+      "descripcion": "SAN JOSE - SAN RAFAEL",
+      "tarifaAjustada": "₡570",
+      "adultoMayor": "0"
+    },
+    {
+      "ruta": "",
+      "descripcion": "SAN JOSE - LA SUIZA",
+      "tarifaAjustada": "₡570",
+      "adultoMayor": "0"
+    },
+    {
+      "ruta": "",
+      "descripcion": "SAN JOSE - SAN PABLO DE HEREDIA",
+      "tarifaAjustada": "₡570",
+      "adultoMayor": "0"
+    },
+    {
+      "ruta": "",
+      "descripcion": "SAN JOSE - SANTO DOMINGO HEREDIA",
+      "tarifaAjustada": "₡570",
+      "adultoMayor": "0"
+    },
+    {
+      "ruta": "",
+      "descripcion": "SAN JOSE - SANTA ROSA",
+      "tarifaAjustada": "₡495",
+      "adultoMayor": "0"
+    },
+    {
+      "ruta": "",
+      "descripcion": "SAN JOSE - LA VALENCIA",
+      "tarifaAjustada": "₡495",
+      "adultoMayor": "0"
+    },
+    {
+      "ruta": "",
+      "descripcion": "SAN PABLO - LA VALENCIA",
+      "tarifaAjustada": "₡495",
+      "adultoMayor": "0"
+    },
+    {
+      "ruta": "",
+      "descripcion": "SAN PABLO - SANTO DOMINGO",
+      "tarifaAjustada": "₡375",
+      "adultoMayor": "0"
+    },
+    {
+      "ruta": "",
+      "descripcion": "SANTA ROSA - SANTO DOMINGO",
+      "tarifaAjustada": "₡375",
+      "adultoMayor": "0"
+    }
+  ]
+}
