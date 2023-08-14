@@ -10,6 +10,10 @@ body{
     max-height: 600px;
     color: white;
 }
+#enviodeCorreo input::placeholder {
+ text-align: center;
+
+}
 
 
 #parrafoCurriculum p{
