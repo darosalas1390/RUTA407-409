@@ -13,6 +13,10 @@
     text-align: center;
     color: white;
     }
+#enviodeCorreo input::placeholder {
+ text-align: center;
+
+}
 
 #TitulosPagina h3{
     text-align: center;
