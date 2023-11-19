@@ -200,7 +200,6 @@
 
                     <table id="tablaTarifa">
                       <tr id="tituloTabla">
-
                         <th>Ruta</th>
                         <th>Descripcion</th>
                         <th>Tarifa Ajustada</th>
@@ -212,6 +211,7 @@
                         <th></th>
                         <th></th>
                       </tr>
+
                     </table>
                   </div>
                 </div>
@@ -452,15 +452,36 @@
         </div>
 
       </div>
+      <div id="contador" class="container" ></div>
 
     </div>
-
+    
 
   </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Obtén el elemento del contador por su ID
+      var contador = document.getElementById("contador");
+  
+      // Verifica si el contador ya existe en el almacenamiento local
+      if (localStorage.getItem("visitas")) {
+        // Si existe, obtén el valor actual y aumenta en 1
+        var visitas = parseInt(localStorage.getItem("visitas")) + 1;
+      } else {
+        // Si no existe, establece el valor inicial en 1
+        var visitas = 1;
+      }
+  
+      // Muestra el número de visitas en el contador
+      contador.innerHTML = "Visitantes: " + visitas;
+  
+      // Guarda el nuevo valor en el almacenamiento local
+      localStorage.setItem("visitas", visitas.toString());
+    });
+  </script>
+
 
 </body>
 
 </html>
-
-
-
