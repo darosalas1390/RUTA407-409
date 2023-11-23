@@ -459,18 +459,21 @@
 
   </footer>
 
-  <script>
+ <script>
     document.addEventListener("DOMContentLoaded", function() {
       // Obtén el elemento del contador por su ID
       var contador = document.getElementById("contador");
   
+      // Declara la variable visitas fuera del condicional
+      var visitas;
+  
       // Verifica si el contador ya existe en el almacenamiento local
       if (localStorage.getItem("visitas")) {
         // Si existe, obtén el valor actual y aumenta en 1
-        var visitas = parseInt(localStorage.getItem("visitas")) + 1;
+        visitas = parseInt(localStorage.getItem("visitas")) + 1;
       } else {
         // Si no existe, establece el valor inicial en 1
-        var visitas = 1;
+        visitas = 1;
       }
   
       // Muestra el número de visitas en el contador
