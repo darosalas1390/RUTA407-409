@@ -3,7 +3,7 @@ const url = 'https://api.crhoy.net/ultimas/5.json';
 
 
 function obtenerNoticias() {
-    
+
   fetch(url)
     .then(res => res.json())
     .then(data => {

@@ -1,35 +1,39 @@
-#TitulosPagina h1{
+#TitulosPagina h1 {
     color: yellow;
     margin-top: 20px;
     margin-left: 10%;
 }
 
-#enviodeCorreo{
-    width: 50%; 
-    margin-top: 5%;
-    background-color:  rgba(0, 0, 0, 0.6); /* Ajusta el valor de "0.8" para cambiar la opacidad */
+#enviodeCorreo {
+    width: 50%;
+    margin-top: 2%;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Ajusta el valor de "0.8" para cambiar la opacidad */
     border-radius: 50px;
-    max-height: 650px;
+    height: 850px;
     text-align: center;
     color: white;
-    }
+
+}
+
 #enviodeCorreo input::placeholder {
  text-align: center;
 
 }
 
-#TitulosPagina h3{
+
+#TitulosPagina h3 {
     text-align: center;
     color: white;
 }
 
-#TitulosPagina p{
+#TitulosPagina p {
     text-align: center;
     color: white;
     font-size: 25px;
 }
 
-#parrafoCurriculum p{
+#parrafoCurriculum p {
     color: white;
     font-size: 25px;
 
@@ -39,17 +43,19 @@
     margin-top: 20px;
 
 }
+
 @media screen and (max-width:768px) {
-    
-    #enviodeCorreo{
-      margin-bottom: 60px;
+
+    #enviodeCorreo {
+        margin-bottom: 60px;
         width: 90%;
     }
-    #TitulosPagina h1{
+
+    #TitulosPagina h1 {
         color: yellow;
         margin-top: 20px;
         text-align: center;
-        margin-left:0;
+        margin-left: 0%;
     }
 
-  }
+}

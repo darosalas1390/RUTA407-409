@@ -1,343 +1,359 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/logo.png">
-    <title>RUTA 407-409</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" type="text/css" href="parada.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFUAFQm6DdfIh42lC2kxfVrgc7ao6SNFw&libraries=places"></script>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/logo.png">
+  <title>RUTA 407-409</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="parada.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFUAFQm6DdfIh42lC2kxfVrgc7ao6SNFw&libraries=places">
+  </script>
 </head>
 
 <body>
 
   <main>
-    
-  <nav class="menuNavegacion" id="nave">
-      
-    <div class="raw">
-        
-      <div class="col-xl-12 col-xs-12 col-md-12 col-sm-12 col-lg-12 col-xxl-12">
 
-        <nav class="navbar navbar-expand-lg  ">
-          <div class="container-fluid" id="fondoBanner">
-            <a class="navbar-brand" href="index.html">
-              <img src="img/logo.png" alt="logoBus" width="150" height="120">
-            </a>
-            <div id="tituloNav"><h1><strong>RUTA 407 - 409</strong> <p>SAN RAFAEL - SAN JOSE</p></h1></div>
-            
-            <button id="botonMenu" class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="quienesSomos.html">Quienes Somos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="tarifas.html">Tarifas</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="horarios.html">Horarios</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="ley7600.html">Ley 7600</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="galeria.html">Galeria</a>
-                </li>
-                <li class="nav-item dropdown" >
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" > Nuestra Gente  </a>
-                    <ul class="dropdown-menu" id="fondoBanner" >
-                    <li id="menuFilosofia"><a class="dropdown-item" href="filosofiaMision.html">Filosofia y Mision</a></li>
-                    <li id="menuFilosofia"><a class="dropdown-item" href="porSeguridad.html">Por su Seguridad</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="trabajo.html">Empleo</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contactenos.html">Contactenos</a>
-                </li>
-               </ul>
-              
-               <div class="col-xs-12 col-xl-2" id="consultas">
-              
-                <div id="whatsappBanner">
-                  <a href="https://wa.me/+50661597798/?text=tu%20texto%20personalizado" target="_blank">
-                    <img src="img/whatsapp.png" width="30" height="30">
-                 </a>
-                </div>
+    <nav class="menuNavegacion" id="nave">
 
-                <div id="correoBanner">
-                  <a href="mailto:transportesruta407-409@ice.co.cr?subject=Quejas o Consultas&body=Estimado/a cliente, Valoramos tu opinión y nos gustaría brindarte la mejor experiencia posible. Si has experimentado algún problema o insatisfacción con nuestros productos/servicios, te invitamos a compartir tu queja con nosotros. Tu retroalimentación es muy importante para nosotros y nos ayudará a mejorar nuestros estándares de calidad."> 
-                    <img src="img/gmail.png" width="30" height="30">
-                  </a>
+      <div class="raw">
+
+        <div class="col-xl-12 col-xs-12 col-md-12 col-sm-12 col-lg-12 col-xxl-12">
+
+          <nav class="navbar navbar-expand-lg  ">
+            <div class="container-fluid" id="fondoBanner">
+              <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="logoBus" width="150" height="120">
+              </a>
+              <div id="tituloNav">
+                <h1><strong>RUTA 407 - 409</strong>
+                  <p>SAN RAFAEL - SAN JOSE</p>
+                </h1>
+              </div>
+
+              <button id="botonMenu" class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="quienesSomos.html">Quienes Somos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="tarifas.html">Tarifas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="horarios.html">Horarios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="ley7600.html">Ley 7600</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="galeria.html">Galeria</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false"> Nuestra Gente </a>
+                    <ul class="dropdown-menu" id="fondoBanner">
+                      <li id="menuFilosofia"><a class="dropdown-item" href="filosofiaMision.html">Filosofia y Mision</a>
+                      </li>
+                      <li id="menuFilosofia"><a class="dropdown-item" href="porSeguridad.html">Por su Seguridad</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="trabajo.html">Empleo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contactenos.html">Contactenos</a>
+                  </li>
+                </ul>
+
+                <div class="col-xs-12 col-xl-2" id="consultas">
+
+                  <div id="whatsappBanner">
+                    <a href="https://wa.me/+50661597798/?text=tu%20texto%20personalizado" target="_blank">
+                      <img src="img/whatsapp.png" width="30" height="30">
+                    </a>
                   </div>
-                  
+
+                  <div id="correoBanner">
+                    <a
+                      href="mailto:transportesruta407-409@ice.co.cr?subject=Quejas o Consultas&body=Estimado/a cliente, Valoramos tu opinión y nos gustaría brindarte la mejor experiencia posible. Si has experimentado algún problema o insatisfacción con nuestros productos/servicios, te invitamos a compartir tu queja con nosotros. Tu retroalimentación es muy importante para nosotros y nos ayudará a mejorar nuestros estándares de calidad.">
+                      <img src="img/gmail.png" width="30" height="30">
+                    </a>
+                  </div>
+
                   <div id="llamadaBanner">
                     <a href="tel:+50625600306">
                       <img src="img/llamada.png" width="30" height="30">
                     </a>
                   </div>
-            </div>     
-          </div>
-          </div>
-        </nav>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
 
-<header class="contenidoPrincipal" id="mapaSanRafaelSanJose">
-
-<div class="container">
-
-<div class="row">
-
-    <div class="col-xl-12 col-xs-12" >
-   <script>
-        function initMap() {
-          var map = new google.maps.Map(document.getElementById('mapSanRafaelSanJose'), {
-            center: {lat: 10.0149958, lng: -84.0968643},
-            zoom: 15
-          });
-
-              
-          // Agrega un marcador para cada punto de parada
-          var puntosParada = [
-            {lat: 10.0151466, lng: -84.0980234},
-            {lat: 10.0149958, lng: -84.0968643},
-            {lat: 10.0134426, lng: -84.0967724},
-            {lat: 10.0113015, lng: -84.0967959},
-            {lat: 10.0092534, lng: -84.0961032},
-            {lat: 10.0077782, lng: -84.0953982},
-            {lat: 10.0063905, lng: -84.0939575},
-            {lat: 10.0051639, lng: -84.0934361},
-            {lat: 10.0041747, lng: -84.0938639},
-            {lat: 10.0023227, lng: -84.0946636},
-            {lat: 10.0012671, lng: -84.0971332},
-            {lat: 9.9997846, lng: -84.0958458},
-            {lat: 9.9960832, lng: -84.0964291},
-            {lat: 9.9949853, lng: -84.0971634},
-            {lat: 9.9934209, lng: -84.0980663},
-            {lat: 9.9922748, lng: -84.0981085},
-            {lat: 9.9912601, lng: -84.0995157},
-            {lat: 9.9904991, lng: -84.0994050},
-            {lat: 9.9887764, lng: -84.0984485},
-            {lat: 9.9869505, lng: -84.0970621},
-            {lat: 9.9827276, lng: -84.0939109},
-            {lat: 9.9822904, lng: -84.0934053},
-            {lat: 9.9821282, lng: -84.0914975},
-            {lat: 9.9814018, lng: -84.0904786},
-            {lat: 9.9794698, lng: -84.0910956},
-            {lat: 9.9797221, lng: -84.0939880},
-            {lat: 9.9798168, lng: -84.0950243},
-            {lat: 9.9798172, lng: -84.0977950},
-            {lat: 9.9788259, lng: -84.0979519},
-            {lat: 9.9751210, lng: -84.0959343},
-            {lat: 9.9736162, lng: -84.0977377},
-            {lat: 9.9716303, lng: -84.0996287},
-            {lat: 9.9699572, lng: -84.1032624},
-            {lat: 9.9694087, lng: -84.1055527},
-            {lat: 9.9689450, lng: -84.1068693},
-            {lat: 9.9683606, lng: -84.1092833},
-            {lat: 9.9681737, lng: -84.1124600},
-            {lat: 9.9640198, lng: -84.1127675},
-            {lat: 9.9619893, lng: -84.1104236},
-            {lat: 9.9605512, lng: -84.1086298},
-            {lat: 9.9571697, lng: -84.1108574},
-            {lat: 9.9547452, lng: -84.1112041},
-            {lat: 9.9525868, lng: -84.1095974},
-            {lat: 9.9517949, lng: -84.1063952},
-            {lat: 9.9507375, lng: -84.1038521},
-            {lat: 9.9496316, lng: -84.1009000},
-            {lat: 9.9490741, lng: -84.0987694},
-            {lat: 9.9485917, lng: -84.0969790},
-            {lat: 9.9482423, lng: -84.0949737},
-            {lat: 9.9479160, lng: -84.0929510},
-            {lat: 9.9467278, lng: -84.0897430},
-            {lat: 9.9454138, lng: -84.0876667},
-            {lat: 9.9437583, lng: -84.0841319},
-            {lat: 9.9391607, lng: -84.0829882},
-            {lat: 9.9370108, lng: -84.0811006},
-            // Agrega más puntos de parada según sea necesario
-          ];
-      
-          puntosParada.forEach(function(parada) {
-            var marker = new google.maps.Marker({
-              position: parada,
-              map: map,
-              animation: google.maps.Animation.DROP
-            });
-             // Agrega el evento de clic al marcador
-             marker.addListener('click', function() {
-                openWaze(parada);
-              });
-          });
-        }
-
-        function openWaze(location) {
-            var wazeURL = 'https://www.waze.com/ul?ll=' + location.lat + ',' + location.lng + '&navigate=yes';
-            window.open(wazeURL, '_blank');
-          }
-
-        window.addEventListener('load', initMap);
-    </script>
-
-       <div id="tituloMapa">
-        <h1>PARADAS SENTIDO SAN RAFAEL - SAN JOSE</h1>
-       </div>  
-       
-      <div id="mapSanRafaelSanJose" style="width: 100%; height: 600px;"></div>
-      
-    
-    </div>
-
-</div>
-
- </div>
-
-</header>
-
-
-
-<header class="container" id="mapaSanJoseSanRafael">
+    <header class="contenidoPrincipal" id="mapaSanRafaelSanJose">
 
       <div class="container">
 
         <div class="row">
-        
-            <div class="col-xl-12 col-xs-12">
+
+          <div class="col-xl-12 col-xs-12">
+            <script>
               
-           <script>
-                function initMap() {
-                  var map = new google.maps.Map(document.getElementById('mapSanJoseSanRafael'), {
-                    center: {lat: 9.9370108, lng: -84.0811006},
-                    zoom: 15
+              function initMap() {
+                var map = new google.maps.Map(document.getElementById('mapSanRafaelSanJose'), {
+                  center: { lat: 10.0149958, lng: -84.0968643 },
+                  zoom: 15
+                });
+
+
+                // Agrega un marcador para cada punto de parada
+                var puntosParada = [
+                  { lat: 10.0151466, lng: -84.0980234 },
+                  { lat: 10.0149958, lng: -84.0968643 },
+                  { lat: 10.0134426, lng: -84.0967724 },
+                  { lat: 10.0113015, lng: -84.0967959 },
+                  { lat: 10.0092534, lng: -84.0961032 },
+                  { lat: 10.0077782, lng: -84.0953982 },
+                  { lat: 10.0063905, lng: -84.0939575 },
+                  { lat: 10.0051639, lng: -84.0934361 },
+                  { lat: 10.0041747, lng: -84.0938639 },
+                  { lat: 10.0023227, lng: -84.0946636 },
+                  { lat: 10.0012671, lng: -84.0971332 },
+                  { lat: 9.9997846, lng: -84.0958458 },
+                  { lat: 9.9960832, lng: -84.0964291 },
+                  { lat: 9.9949853, lng: -84.0971634 },
+                  { lat: 9.9934209, lng: -84.0980663 },
+                  { lat: 9.9922748, lng: -84.0981085 },
+                  { lat: 9.9912601, lng: -84.0995157 },
+                  { lat: 9.9904991, lng: -84.0994050 },
+                  { lat: 9.9887764, lng: -84.0984485 },
+                  { lat: 9.9869505, lng: -84.0970621 },
+                  { lat: 9.9827276, lng: -84.0939109 },
+                  { lat: 9.9822904, lng: -84.0934053 },
+                  { lat: 9.9821282, lng: -84.0914975 },
+                  { lat: 9.9814018, lng: -84.0904786 },
+                  { lat: 9.9794698, lng: -84.0910956 },
+                  { lat: 9.9797221, lng: -84.0939880 },
+                  { lat: 9.9798168, lng: -84.0950243 },
+                  { lat: 9.9798172, lng: -84.0977950 },
+                  { lat: 9.9788259, lng: -84.0979519 },
+                  { lat: 9.9751210, lng: -84.0959343 },
+                  { lat: 9.9736162, lng: -84.0977377 },
+                  { lat: 9.9716303, lng: -84.0996287 },
+                  { lat: 9.9699572, lng: -84.1032624 },
+                  { lat: 9.9694087, lng: -84.1055527 },
+                  { lat: 9.9689450, lng: -84.1068693 },
+                  { lat: 9.9683606, lng: -84.1092833 },
+                  { lat: 9.9681737, lng: -84.1124600 },
+                  { lat: 9.9640198, lng: -84.1127675 },
+                  { lat: 9.9619893, lng: -84.1104236 },
+                  { lat: 9.9605512, lng: -84.1086298 },
+                  { lat: 9.9571697, lng: -84.1108574 },
+                  { lat: 9.9547452, lng: -84.1112041 },
+                  { lat: 9.9525868, lng: -84.1095974 },
+                  { lat: 9.9517949, lng: -84.1063952 },
+                  { lat: 9.9507375, lng: -84.1038521 },
+                  { lat: 9.9496316, lng: -84.1009000 },
+                  { lat: 9.9490741, lng: -84.0987694 },
+                  { lat: 9.9485917, lng: -84.0969790 },
+                  { lat: 9.9482423, lng: -84.0949737 },
+                  { lat: 9.9479160, lng: -84.0929510 },
+                  { lat: 9.9467278, lng: -84.0897430 },
+                  { lat: 9.9454138, lng: -84.0876667 },
+                  { lat: 9.9437583, lng: -84.0841319 },
+                  { lat: 9.9391607, lng: -84.0829882 },
+                  { lat: 9.9370108, lng: -84.0811006 },
+                  // Agrega más puntos de parada según sea necesario
+                ];
+
+                puntosParada.forEach(function (parada) {
+                  var marker = new google.maps.Marker({
+                    position: parada,
+                    map: map,
+                    animation: google.maps.Animation.DROP
                   });
-                 
-
-               
-                  // Agrega un marcador para cada punto de parada
-                  var puntosParada = [
-                    {lat: 9.9370108, lng: -84.0811006},
-                    {lat: 9.9410398, lng: -84.0828390},
-                    {lat: 9.9436701, lng: -84.0834895},
-                    {lat: 9.9450796, lng: -84.0869043},
-                    {lat: 9.9458042, lng: -84.0881961},
-                    {lat: 9.9472882, lng: -84.0906989},
-                    {lat: 9.9479655, lng: -84.0928450},
-                    {lat: 9.9482466, lng: -84.0948647},
-                    {lat: 9.9485785, lng: -84.0967885},
-                    {lat: 9.9487832, lng: -84.0974869},
-                    {lat: 9.9496900, lng: -84.1009503},
-                    {lat: 9.9511599, lng: -84.1042206},
-                    {lat: 9.9523672, lng: -84.1082084},
-                    {lat: 9.9525560, lng: -84.1093258},
-                    {lat: 9.9557858, lng: -84.1109808},
-                    {lat: 9.9596170, lng: -84.1083445},
-                    {lat: 9.9621092, lng: -84.1103632},
-                    {lat: 9.9653586, lng: -84.1126790},
-                    {lat: 9.9671038, lng: -84.1131970},
-                    {lat: 9.9683751, lng: -84.1087948},
-                    {lat: 9.9689018, lng: -84.1068046},
-                    {lat: 9.9696702, lng: -84.1039836},
-                    {lat: 9.9714920, lng: -84.0996890},
-                    {lat: 9.9733418, lng: -84.0979724},
-                    {lat: 9.9742453, lng: -84.0967309},
-                    {lat: 9.9750176, lng: -84.0958602},
-                    {lat: 9.9784868, lng: -84.0978068},
-                    {lat: 9.9792964, lng: -84.0879972},
-                    {lat: 9.9797974, lng: -84.0953988},
-                    {lat: 9.9806189, lng: -84.0945070},
-                    {lat: 9.9804604, lng: -84.0926556},
-                    {lat: 9.9803009, lng: -84.0909792},
-                    {lat: 9.9814928, lng: -84.0875426},
-                    {lat: 9.9829940, lng: -84.0908334},
-                    {lat: 9.9832539, lng: -84.0937835},
-                    {lat: 9.9873538, lng: -84.0974450},
-                    {lat: 9.9878222, lng: -84.0978510},
-                    {lat: 9.9896171, lng: -84.0979650},
-                    {lat: 9.9920635, lng: -84.0980697},
-                    {lat: 9.9943824, lng: -84.0979875},
-                    {lat: 9.9949863, lng: -84.0967453},
-                    {lat: 9.9965739, lng: -84.0963245},
-                    {lat: 9.9982083, lng: -84.0960811},
-                    {lat: 9.9998893, lng: -84.0958293},
-                    {lat: 10.0013946, lng: -84.0958679},
-                    {lat: 10.0022372, lng: -84.0947725},
-                    {lat: 10.0040555, lng: -84.0938431},
-                    {lat: 10.0052151, lng: -84.0934006},
-                    {lat: 10.0066541, lng: -84.0942451},
-                    {lat: 10.0092561, lng: -84.0960560},
-                    {lat: 10.0120919, lng: -84.0968090},
-                    {lat: 10.0132700, lng: -84.0967091},
-                    {lat: 10.0150628, lng: -84.0979556},
-                    
-                    
-                    // Agrega más puntos de parada según sea necesario
-                  ];
-              
-                  puntosParada.forEach(function(parada) {
-                    var marker =  new google.maps.Marker({
-                      position: parada,
-                      map: map,
-                      animation: google.maps.Animation.DROP
-                    });
-
-                    // Agrega el evento de clic al marcador
-              marker.addListener('click', function() {
-                openWaze(parada);
-                      });
+                  // Agrega el evento de clic al marcador
+                  marker.addListener('click', function () {
+                    openWaze(parada);
                   });
-                }
+                });
+              }
 
-                function openWaze(location) {
-            var wazeURL = 'https://www.waze.com/ul?ll=' + location.lat + ',' + location.lng + '&navigate=yes';
-            window.open(wazeURL, '_blank');
-          }
+              function openWaze(location) {
+                var wazeURL = 'https://www.waze.com/ul?ll=' + location.lat + ',' + location.lng + '&navigate=yes';
+                window.open(wazeURL, '_blank');
+              }
 
-
-                window.addEventListener('load', initMap);
+              window.addEventListener('load', initMap);
             </script>
 
-               <div id="tituloMapa">
-                <h1>PARADAS SENTIDO SAN JOSE - SAN RAFAEL</h1>
-               </div>  
-        
-              <div id="mapSanJoseSanRafael" style="width: 100%; height: 600px;"></div>
-              
+            <div id="tituloMapa">
+              <h1>PARADAS SENTIDO SAN RAFAEL - SAN JOSE</h1>
             </div>
-        
+
+            <div id="mapSanRafaelSanJose" style="width: 100%; height: 600px;"></div>
+
+
+          </div>
+
         </div>
-        
-         </div>
-    </div>
 
-    
- 
-</header>
+      </div>
 
-</main>
+    </header>
 
-<footer>
+
+
+    <header class="container" id="mapaSanJoseSanRafael">
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-xl-12 col-xs-12">
+
+            <script>
+              function initMap() {
+                var map = new google.maps.Map(document.getElementById('mapSanJoseSanRafael'), {
+                  center: { lat: 9.9370108, lng: -84.0811006 },
+                  zoom: 15
+                });
+
+
+
+                // Agrega un marcador para cada punto de parada
+                var puntosParada = [
+                  { lat: 9.9370108, lng: -84.0811006 },
+                  { lat: 9.9410398, lng: -84.0828390 },
+                  { lat: 9.9436701, lng: -84.0834895 },
+                  { lat: 9.9450796, lng: -84.0869043 },
+                  { lat: 9.9458042, lng: -84.0881961 },
+                  { lat: 9.9472882, lng: -84.0906989 },
+                  { lat: 9.9479655, lng: -84.0928450 },
+                  { lat: 9.9482466, lng: -84.0948647 },
+                  { lat: 9.9485785, lng: -84.0967885 },
+                  { lat: 9.9487832, lng: -84.0974869 },
+                  { lat: 9.9496900, lng: -84.1009503 },
+                  { lat: 9.9511599, lng: -84.1042206 },
+                  { lat: 9.9523672, lng: -84.1082084 },
+                  { lat: 9.9525560, lng: -84.1093258 },
+                  { lat: 9.9557858, lng: -84.1109808 },
+                  { lat: 9.9596170, lng: -84.1083445 },
+                  { lat: 9.9621092, lng: -84.1103632 },
+                  { lat: 9.9653586, lng: -84.1126790 },
+                  { lat: 9.9671038, lng: -84.1131970 },
+                  { lat: 9.9683751, lng: -84.1087948 },
+                  { lat: 9.9689018, lng: -84.1068046 },
+                  { lat: 9.9696702, lng: -84.1039836 },
+                  { lat: 9.9714920, lng: -84.0996890 },
+                  { lat: 9.9733418, lng: -84.0979724 },
+                  { lat: 9.9742453, lng: -84.0967309 },
+                  { lat: 9.9750176, lng: -84.0958602 },
+                  { lat: 9.9784868, lng: -84.0978068 },
+                  { lat: 9.9792964, lng: -84.0879972 },
+                  { lat: 9.9797974, lng: -84.0953988 },
+                  { lat: 9.9806189, lng: -84.0945070 },
+                  { lat: 9.9804604, lng: -84.0926556 },
+                  { lat: 9.9803009, lng: -84.0909792 },
+                  { lat: 9.9814928, lng: -84.0875426 },
+                  { lat: 9.9829940, lng: -84.0908334 },
+                  { lat: 9.9832539, lng: -84.0937835 },
+                  { lat: 9.9873538, lng: -84.0974450 },
+                  { lat: 9.9878222, lng: -84.0978510 },
+                  { lat: 9.9896171, lng: -84.0979650 },
+                  { lat: 9.9920635, lng: -84.0980697 },
+                  { lat: 9.9943824, lng: -84.0979875 },
+                  { lat: 9.9949863, lng: -84.0967453 },
+                  { lat: 9.9965739, lng: -84.0963245 },
+                  { lat: 9.9982083, lng: -84.0960811 },
+                  { lat: 9.9998893, lng: -84.0958293 },
+                  { lat: 10.0013946, lng: -84.0958679 },
+                  { lat: 10.0022372, lng: -84.0947725 },
+                  { lat: 10.0040555, lng: -84.0938431 },
+                  { lat: 10.0052151, lng: -84.0934006 },
+                  { lat: 10.0066541, lng: -84.0942451 },
+                  { lat: 10.0092561, lng: -84.0960560 },
+                  { lat: 10.0120919, lng: -84.0968090 },
+                  { lat: 10.0132700, lng: -84.0967091 },
+                  { lat: 10.0150628, lng: -84.0979556 },
+
+
+                  // Agrega más puntos de parada según sea necesario
+                ];
+
+                puntosParada.forEach(function (parada) {
+                  var marker = new google.maps.Marker({
+                    position: parada,
+                    map: map,
+                    animation: google.maps.Animation.DROP
+                  });
+
+                  // Agrega el evento de clic al marcador
+                  marker.addListener('click', function () {
+                    openWaze(parada);
+                  });
+                });
+              }
+
+              function openWaze(location) {
+                var wazeURL = 'https://www.waze.com/ul?ll=' + location.lat + ',' + location.lng + '&navigate=yes';
+                window.open(wazeURL, '_blank');
+              }
+
+
+              window.addEventListener('load', initMap);
+            </script>
+
+            <div id="tituloMapa">
+              <h1>PARADAS SENTIDO SAN JOSE - SAN RAFAEL</h1>
+            </div>
+
+            <div id="mapSanJoseSanRafael" style="width: 100%; height: 600px;"></div>
+
+          </div>
+
+        </div>
+
+      </div>
+      </div>
+
+
+
+    </header>
+
+  </main>
+
+  <footer>
 
     <div id="footer" class="clearfix">
       <div>
-        <credit>&copy; Derechos Reservados RUTA 407-409 2023 </credit>
-        <credit><a href="https://darosalas1390.github.io/davidWEBdesing/"><strong>David WEB Design,</strong></a></credit>
+        <credit>&copy; Derechos Reservados RUTA 407-409 2023</credit>
+        <credit><a href="https://darosalas1390.github.io/davidWEBdesing/"><strong>David WEB Design,</strong></a>
           <credit> <a href="https://mack8.github.io/MackDesigner/"><strong>  Mack Desing.</strong></a>
         </credit> JUN 17, 2023
         <div id="date"></div>

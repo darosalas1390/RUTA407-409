@@ -1,68 +1,79 @@
 #contTablaSemana {
-    color: white;
-    margin-top: 200px;
-  }
-  
-  #entreSemana {
-    justify-content: space-around;
-  }
-  
-  #LV, #S, #D {
-    border: solid  rgba(0, 0, 0, 0.8) 20px;
-    flex-direction: column;
-    align-items: center;
+  color: white;
+  margin-top: 200px;
+}
+
+#entreSemana {
+  justify-content: space-around;
+}
+
+#LV,
+#S,
+#D {
+  border: solid rgba(0, 0, 0, 0.8) 20px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Ajusta el valor de "0.8" para cambiar la opacidad */
+}
+
+#tlv,
+#ts,
+#td {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  /* Agrega un margen inferior de 20px */
+}
+
+
+#contDescargaHorario .col-xl-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#contDescargaHorario img {
+  height: 100px;
+  border: solid lime;
+  padding: 10px;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+  /* Agrega una transición suave */
+  background-color: lime;
+
+}
+
+#contDescargaHorario p {
+  color: white;
+  font-size: 17px;
+}
+
+#contDescargaHorario img:hover {
+  transform: scale(1.1);
+  /* Hace que la imagen se haga un poco más grande al pasar el mouse por encima */
+}
+
+#TituloHorarios {
+  color: yellow;
+  margin-top: 20px;
+  margin-left: 10%;
+}
+
+
+@media screen and (max-width:768px) {
+
+  #TituloHorarios {
+    color: yellow;
+    margin-top: 20px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.8); /* Ajusta el valor de "0.8" para cambiar la opacidad */
-  }
-  #tlv, #ts, #td {
-    margin: 0 auto;
-  margin-bottom: 20px; /* Agrega un margen inferior de 20px */
+    margin-left: 0%;
   }
 
+  #contTablaSemana {
 
-    #contDescargaHorario .col-xl-4 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align:center;
-        margin-top: 50px;
-      }
-      
-     #contDescargaHorario img {
-        height: 100px;
-        border: solid lime;
-        padding: 10px;
-        border-radius: 50%;
-        transition: transform 0.2s ease; /* Agrega una transición suave */
-        background-color: lime;
-        
-      }
-
-      #contDescargaHorario p {
-        color: white;
-        font-size: 17px;
-      }
-      
-      #contDescargaHorario img:hover {
-        transform: scale(1.1); /* Hace que la imagen se haga un poco más grande al pasar el mouse por encima */
-      }
-
-      #TituloHorarios{
-        color: yellow;
-        margin-top: 20px;
-        margin-left: 10%;
-      }
-
- @media screen and (max-width:768px) {
-    
-        #TituloHorarios{
-          color: yellow;
-          margin-top: 20px;
-          text-align: center;
-         margin-left: 0%;
-        }
-     #contTablaSemana {
-          
-          margin-top: 20px;
-        }
-      }
+    margin-top: 20px;
+  }
+}

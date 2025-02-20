@@ -1,56 +1,59 @@
-#contSeguridad h1{
-    margin-left: 10%;
-    color: yellow;
+#contSeguridad h1 {
+  margin-left: 10%;
+  color: yellow;
 }
 
-#contSeguridad p{
-    color: white;
-    text-align: center;
-    font-size: 25px;
+#contSeguridad p {
+  color: white;
+  text-align: center;
+  font-size: 25px;
 }
 
-#contSeguridad{
-   margin-top: 20px;
+#contSeguridad {
+  margin-top: 20px;
 }
 
-#contSeguridadLista h3{
-    text-align: center;
-     color: white;
+#contSeguridadLista h3 {
+  text-align: center;
+  color: white;
 }
 
-#contSeguridadLista h2{
-    text-align: center;
-     color: white;
+#contSeguridadLista h2 {
+  text-align: center;
+  color: white;
 }
 
-#listaSeguridad{
-    margin-top: 50px;
+#listaSeguridad {
+  margin-top: 50px;
 
 }
 
-#listaSeguridad{
-    text-align: center;
-    font-size: 25px;
-    margin-top: 30px;
+#listaSeguridad {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 30px;
 }
 
 #seguridadContainer {
-    font-size: 24px; /* Tamaño de fuente deseado */
-    text-align: center;
-    margin-top: 20px;
-  }
+  font-size: 24px;
+  /* Tamaño de fuente deseado */
+  text-align: center;
+  margin-top: 20px;
+}
 
 @media screen and (max-width:768px) {
-    
-    #contSeguridadLista{
-      margin-bottom: 60px;
-    }
-    #contSeguridadLista h3{
-        display: none;
-      }
-      #contSeguridad h1{
-        text-align: center;
-        color: yellow;
-           margin-left: 0%;
-    }
+
+  #contSeguridadLista {
+    margin-bottom: 60px;
   }
+
+  #contSeguridadLista h3 {
+    display: none;
+  }
+
+  #contSeguridad h1 {
+    text-align: center;
+    color: yellow;
+    margin-left: 0%;
+  }
+}

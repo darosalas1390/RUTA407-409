@@ -6,10 +6,10 @@ var apiUrl = "https://api.recope.go.cr/ventas/precio/consumidor"
 
 // Realizar la solicitud HTTP a la API
 fetch(apiUrl)
-  .then(function(response) {
+  .then(function (response) {
     return response.json();
   })
-  .then(function(data) {
+  .then(function (data) {
     var precios = data;
 
     // Obtener la referencia al elemento <div class="precios">
@@ -24,7 +24,7 @@ fetch(apiUrl)
     var headerRow = document.createElement("tr");
     var headers = ["Producto", " Precio sin Impuesto", "Impuesto", "Precio total"];
 
-    headers.forEach(function(header) {
+    headers.forEach(function (header) {
       var th = document.createElement("th");
       th.textContent = header;
       headerRow.appendChild(th);
@@ -35,7 +35,7 @@ fetch(apiUrl)
     table.appendChild(tbody);
 
     // Iterar sobre los datos y agregar filas a la tabla
-    precios.forEach(function(precio) {
+    precios.forEach(function (precio) {
       var row = document.createElement("tr");
 
       // Agregar celdas a la fila con los datos correspondientes
@@ -46,7 +46,7 @@ fetch(apiUrl)
         precio.preciototal
       ];
 
-      cells.forEach(function(cell) {
+      cells.forEach(function (cell) {
         var td = document.createElement("td");
         td.textContent = cell;
         row.appendChild(td);
@@ -58,6 +58,6 @@ fetch(apiUrl)
     // Agregar la tabla al elemento <div class="precios">
     preciosDiv.appendChild(table);
   })
-  .catch(function(error) {
+  .catch(function (error) {
     console.log("Error al obtener los precios: " + error);
   });
