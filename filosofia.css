@@ -1,0 +1,57 @@
+#tituloFilosofia h1 {
+  margin-left: 10%;
+  color: yellow;
+}
+
+#contPrincipalFilosofia p {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
+
+#contPrincipalFilosofia {
+  margin-top: 20px;
+}
+
+#contMision h3 {
+  text-align: center;
+  color: white;
+}
+
+#contMision h2 {
+  text-align: center;
+  color: white;
+}
+
+#listaMision {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 50px;
+
+}
+
+#misionesContainer {
+  font-size: 24px;
+  /* Tamaño de fuente deseado */
+  text-align: center;
+  margin-top: 30px;
+}
+
+@media screen and (max-width:768px) {
+
+  #contMision {
+    margin-bottom: 60px;
+  }
+
+  #contMision h3 {
+    display: none;
+  }
+
+  #tituloFilosofia h1 {
+    text-align: center;
+    color: yellow;
+    margin-left: 0%;
+  }
+
+
+}
