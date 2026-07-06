@@ -1,417 +1,401 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="shortcut icon" href="img/logo.png">
-  <title>RUTA 407-409</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Empleo · RUTA 407-409</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <link rel="stylesheet" type="text/css" href="banner.css">
-  <link rel="stylesheet" type="text/css" href="trabajo.css">
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="trabajo.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 
 <body>
+  <nav class="navbar navbar-expand-lg navbar-dark topbar sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-3" href="index.html">
+        <img src="img/logo.png" alt="Logo Ruta 407-409" class="brand-logo">
+        <div>
+          <span class="brand-title">RUTA 407-409</span>
+          <small class="brand-subtitle">San Rafael · San José</small>
+        </div>
+      </a>
 
-  <nav class="menuNavegacion" id="nave">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="raw">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="quienesSomos.html">Quiénes somos</a></li>
+          <li class="nav-item"><a class="nav-link" href="tarifas.html">Tarifas</a></li>
+          <li class="nav-item"><a class="nav-link" href="horarios.html">Horarios</a></li>
+          <li class="nav-item"><a class="nav-link" href="ley7600.html">Ley 7600</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
 
-      <div class="col-xl-12 col-xs-12 col-md-12 col-sm-12 col-lg-12 col-xxl-12">
-
-        <nav class="navbar navbar-expand-lg  ">
-          <div class="container-fluid" id="fondoBanner">
-            <a class="navbar-brand" href="index.html">
-              <img src="img/logo.png" alt="logoBus" width="130" height="120" style="border-radius: 50%;">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              Nuestra gente
             </a>
-            <div id="tituloNav">
-              <h1><strong>RUTA 407 - 409</strong>
-                <p>SAN RAFAEL - SAN JOSE</p>
-              </h1>
-            </div>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="filosofiaMision.html">Filosofía y misión</a></li>
+              <li><a class="dropdown-item" href="porSeguridad.html">Por su seguridad</a></li>
+            </ul>
+          </li>
 
-            <button id="botonMenu" class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+          <li class="nav-item"><a class="nav-link active" href="trabajo.html">Empleo</a></li>
+          <li class="nav-item"><a class="nav-link" href="contactenos.html">Contáctenos</a></li>
+        </ul>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="quienesSomos.html">Quienes Somos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="tarifas.html">Tarifas</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="horarios.html">Horarios</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="ley7600.html">Ley 7600</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="galeria.html">Galeria</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false"> Nuestra Gente </a>
-                  <ul class="dropdown-menu" id="fondoBanner">
-                    <li id="menuFilosofia"><a class="dropdown-item" href="filosofiaMision.html">Filosofia y Mision</a>
-                    </li>
-                    <li id="menuFilosofia"><a class="dropdown-item" href="porSeguridad.html">Por su Seguridad</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="trabajo.html">Empleo</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contactenos.html">Contactenos</a>
-                </li>
-              </ul>
-
-              <div class="col-xs-12 col-xl-2" id="consultas">
-
-                <div id="whatsappBanner">
-                  <a href="https://wa.me/+50661597798/?text=tu%20texto%20personalizado" target="_blank">
-                    <img src="img/whatsapp.png" width="30" height="30">
-                  </a>
-                </div>
-
-                <div id="correoBanner">
-                  <a
-                    href="mailto:transportesruta407-409@ice.co.cr?subject=Quejas o Consultas&body=Estimado/a cliente, Valoramos tu opinión y nos gustaría brindarte la mejor experiencia posible. Si has experimentado algún problema o insatisfacción con nuestros productos/servicios, te invitamos a compartir tu queja con nosotros. Tu retroalimentación es muy importante para nosotros y nos ayudará a mejorar nuestros estándares de calidad.">
-                    <img src="img/gmail.png" width="30" height="30">
-                  </a>
-                </div>
-
-                <div id="llamadaBanner">
-                  <a href="tel:+50625600306">
-                    <img src="img/llamada.png" width="30" height="30">
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </nav>
+        <div class="social-links ms-lg-3 mt-3 mt-lg-0">
+          <a href="https://wa.me/+50661597798" target="_blank" aria-label="WhatsApp">
+            <img src="img/whatsapp.png" alt="">
+          </a>
+          <a href="mailto:transportesruta407-409@ice.co.cr" aria-label="Correo">
+            <img src="img/gmail.png" alt="">
+          </a>
+          <a href="tel:+50625600306" aria-label="Teléfono">
+            <img src="img/llamada.png" alt="">
+          </a>
+        </div>
       </div>
     </div>
   </nav>
 
-
   <main>
+    <section class="jobs-hero">
+      <div class="container">
+        <div class="jobs-hero-panel">
+          <div>
+            <span class="eyebrow">Oportunidades laborales</span>
+            <h1>Forme parte de nuestro equipo</h1>
+            <p>
+              Complete el formulario con sus datos personales y adjunte su currículum
+              para participar en futuros procesos de contratación.
+            </p>
+          </div>
 
-    <header>
-
-
-      <div id="parrafoCurriculum">
-        <p>Si deseas ser parte de nuestra empresa, puedes ingresar tus datos personales y adjuntar tu curriculum</p>
+          <div class="jobs-hero-icon">
+            <i class="fas fa-briefcase"></i>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="container overflow-auto" id="enviodeCorreo">
+    <section class="jobs-section">
+      <div class="container">
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-4">
+            <aside class="jobs-info-card">
+              <span class="eyebrow">Antes de enviar</span>
+              <h2>Información importante</h2>
 
-        <h1>ENVIO DE CURRICULUM</h1>
-        <form id="form">
-          <input type="hidden" id="mensaje1" name="mensaje1" value="Nuevo Correo  Curriculum de: ">
-          <input type="hidden" id="mensaje2" name="mensaje2" value="Mi nombre es: ">
-          <input type="hidden" id="mensaje3" name="mensaje3" value="Mi apellido es: ">
-          <input type="hidden" id="mensaje4" name="mensaje4" value="Mi telefono es: ">
-          <input type="hidden" id="mensaje5" name="mensaje5" value="Mi email es: ">
-          <input type="hidden" id="mensaje6" name="mensaje6" value="Mi mensaje es: ">
-          <input type="hidden" id="mensaje7" name="mensaje7" value="Mi Fecha de Nacimiento es: ">
-          <input type="hidden" id="mensaje8" name="mensaje8" value="Mi Edad es: ">
-          <input type="hidden" id="mensaje9" name="mensaje9" value="Mi Genero es: ">
-          <input type="hidden" id="mensaje10" name="mensaje10" value="Archivo Adjunto: ">
-          <input type="hidden" id="mensaje11" name="mensaje11" value="Grado Academico: ">
+              <div class="jobs-info-list">
+                <div class="jobs-info-item">
+                  <span><i class="fas fa-user-check"></i></span>
+                  <div>
+                    <h3>Datos completos</h3>
+                    <p>Revise que su nombre, teléfono y correo sean correctos.</p>
+                  </div>
+                </div>
 
+                <div class="jobs-info-item">
+                  <span><i class="fas fa-file-alt"></i></span>
+                  <div>
+                    <h3>Currículum actualizado</h3>
+                    <p>Adjunte un documento reciente con su experiencia y formación.</p>
+                  </div>
+                </div>
 
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre" name="name"
-              required>
-            <div class="invalid-feedback">
-              Debe ingresar solo letras en el nombre.
-            </div>
-          </div>
-          <script>
-            // Función para validar si el valor contiene solo letras y espacios
-            function containsOnlyLettersAndSpaces(value) {
-              return /^[a-zA-Z ]+$/.test(value);
-            }
-
-            // Función para validar el campo de nombre
-            function validateName() {
-              const nameInput = document.getElementById('exampleFormControlInput1');
-              const nameValue = nameInput.value.trim();
-
-              if (nameValue === '' || !containsOnlyLettersAndSpaces(nameValue)) {
-                nameInput.classList.add('is-invalid');
-                nameInput.classList.remove('is-valid');
-              } else {
-                nameInput.classList.remove('is-invalid');
-                nameInput.classList.add('is-valid');
-              }
-            }
-
-            document.getElementById('exampleFormControlInput1').addEventListener('input', validateName);
-          </script>
-
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Apellidos</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1-last" placeholder="Apellidos"
-              name="last" required>
-            <div class="invalid-feedback">
-              Debe ingresar solo letras en los apellidos.
-            </div>
-          </div>
-          <script>
-            // Función para validar si el valor contiene solo letras y espacios
-            function containsOnlyLettersAndSpaces(value) {
-              return /^[a-zA-Z ]+$/.test(value);
-            }
-
-            // Función para validar el campo de apellidos
-            function validateLastName() {
-              const lastNameInput = document.getElementById('exampleFormControlInput1-last');
-              const lastNameValue = lastNameInput.value.trim();
-
-              if (lastNameValue === '' || !containsOnlyLettersAndSpaces(lastNameValue)) {
-                lastNameInput.classList.add('is-invalid');
-                lastNameInput.classList.remove('is-valid');
-              } else {
-                lastNameInput.classList.remove('is-invalid');
-                lastNameInput.classList.add('is-valid');
-              }
-            }
-
-            document.getElementById('exampleFormControlInput1-last').addEventListener('input', validateLastName);
-          </script>
-
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Teléfono</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1-phone" placeholder="Teléfono"
-              name="phone" required>
-            <div class="invalid-feedback">
-              Debe ingresar solo números en el teléfono.
-            </div>
-          </div>
-          <script>
-            // Función para validar si el valor contiene solo números
-            function containsOnlyNumbers(value) {
-              return /^\d+$/.test(value);
-            }
-
-            // Función para validar el campo de teléfono
-            function validatePhone() {
-              const phoneInput = document.getElementById('exampleFormControlInput1-phone');
-              const phoneValue = phoneInput.value.trim();
-
-              if (phoneValue === '' || !containsOnlyNumbers(phoneValue)) {
-                phoneInput.classList.add('is-invalid');
-                phoneInput.classList.remove('is-valid');
-              } else {
-                phoneInput.classList.remove('is-invalid');
-                phoneInput.classList.add('is-valid');
-              }
-            }
-
-            document.getElementById('exampleFormControlInput1-phone').addEventListener('input', validatePhone);
-          </script>
-
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Email</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1-email" placeholder="nombre@gmail.com"
-              name="email" required>
-            <div class="invalid-feedback">
-              Debe ingresar un email válido con al menos un símbolo '@'.
-            </div>
-          </div>
-          <script>
-            // Función para validar si el email contiene al menos un símbolo '@'
-            function containsAtSymbol(value) {
-              return value.includes('@');
-            }
-
-            // Función para validar el campo de email
-            function validateEmail() {
-              const emailInput = document.getElementById('exampleFormControlInput1-email');
-              const emailValue = emailInput.value.trim();
-
-              if (emailValue === '' || !containsAtSymbol(emailValue)) {
-                emailInput.classList.add('is-invalid');
-                emailInput.classList.remove('is-valid');
-              } else {
-                emailInput.classList.remove('is-invalid');
-                emailInput.classList.add('is-valid');
-              }
-            }
-
-            document.getElementById('exampleFormControlInput1-email').addEventListener('input', validateEmail);
-          </script>
-
-          <input type="hidden" id="edad" name="edad">
-
-          <div class="mb-3">
-            <label for="fecha">Fecha Nacimiento:</label>
-            <input type="date" id="fechaNaci" name="nacimiento" required>
+                <div class="jobs-info-item">
+                  <span><i class="fas fa-shield-alt"></i></span>
+                  <div>
+                    <h3>Información segura</h3>
+                    <p>Sus datos serán utilizados únicamente para fines de reclutamiento.</p>
+                  </div>
+                </div>
+              </div>
+            </aside>
           </div>
 
-          <script>
-            var inputFecha = document.getElementById('fechaNaci');
-            var inputEdad = document.getElementById('edad');
+          <div class="col-lg-8">
+            <article class="application-card">
+              <div class="application-card-header">
+                <div>
+                  <span class="eyebrow">Solicitud de empleo</span>
+                  <h2>Envío de currículum</h2>
+                  <p>Los campos marcados con * son obligatorios.</p>
+                </div>
 
-            inputFecha.addEventListener('change', function () {
-              var fechaNacimiento = new Date(inputFecha.value);
-              var hoy = new Date();
+                <div class="application-icon">
+                  <i class="fas fa-paper-plane"></i>
+                </div>
+              </div>
 
-              // Calcula la diferencia de tiempo en milisegundos
-              var diferenciaTiempo = hoy.getTime() - fechaNacimiento.getTime();
+              <form id="form" class="application-form" novalidate>
+                <input type="hidden" id="mensaje1" name="mensaje1" value="Nuevo Correo Curriculum de: ">
+                <input type="hidden" id="mensaje2" name="mensaje2" value="Mi nombre es: ">
+                <input type="hidden" id="mensaje3" name="mensaje3" value="Mi apellido es: ">
+                <input type="hidden" id="mensaje4" name="mensaje4" value="Mi telefono es: ">
+                <input type="hidden" id="mensaje5" name="mensaje5" value="Mi email es: ">
+                <input type="hidden" id="mensaje6" name="mensaje6" value="Mi mensaje es: ">
+                <input type="hidden" id="mensaje7" name="mensaje7" value="Mi Fecha de Nacimiento es: ">
+                <input type="hidden" id="mensaje8" name="mensaje8" value="Mi Edad es: ">
+                <input type="hidden" id="mensaje9" name="mensaje9" value="Mi Genero es: ">
+                <input type="hidden" id="mensaje10" name="mensaje10" value="Archivo Adjunto: ">
+                <input type="hidden" id="mensaje11" name="mensaje11" value="Grado Academico: ">
+                <input type="hidden" id="edad" name="edad">
 
-              // Calcula la edad en base a la diferencia de tiempo
-              var edad = Math.floor(diferenciaTiempo / (1000 * 60 * 60 * 24 * 365.25));
+                <div class="form-grid">
+                  <div class="form-field">
+                    <label for="nombre">Nombre *</label>
+                    <div class="input-wrap">
+                      <i class="fas fa-user"></i>
+                      <input type="text" id="nombre" name="name" placeholder="Ingrese su nombre" required>
+                    </div>
+                    <div class="invalid-feedback">Ingrese únicamente letras y espacios.</div>
+                  </div>
 
-              // Establece el valor de la edad en el campo de entrada oculto
-              inputEdad.value = edad.toString();
-            });
-          </script>
+                  <div class="form-field">
+                    <label for="apellidos">Apellidos *</label>
+                    <div class="input-wrap">
+                      <i class="fas fa-user"></i>
+                      <input type="text" id="apellidos" name="last" placeholder="Ingrese sus apellidos" required>
+                    </div>
+                    <div class="invalid-feedback">Ingrese únicamente letras y espacios.</div>
+                  </div>
 
+                  <div class="form-field">
+                    <label for="telefono">Teléfono *</label>
+                    <div class="input-wrap">
+                      <i class="fas fa-phone"></i>
+                      <input type="tel" id="telefono" name="phone" placeholder="Ejemplo: 88888888" required>
+                    </div>
+                    <div class="invalid-feedback">Ingrese únicamente números.</div>
+                  </div>
 
-          <div class="mb-3">
-            <input type="radio" id="masculino" name="masculino" value="masculino">
-            <label for="option1">Masculino</label><br>
+                  <div class="form-field">
+                    <label for="email">Correo electrónico *</label>
+                    <div class="input-wrap">
+                      <i class="fas fa-envelope"></i>
+                      <input type="email" id="email" name="email" placeholder="nombre@correo.com" required>
+                    </div>
+                    <div class="invalid-feedback">Ingrese un correo electrónico válido.</div>
+                  </div>
 
-            <input type="radio" id="femenino" name="femenino" value="femenino">
-            <label for="option2">Femenino</label><br>
+                  <div class="form-field">
+                    <label for="fechaNaci">Fecha de nacimiento *</label>
+                    <div class="input-wrap">
+                      <i class="fas fa-calendar-alt"></i>
+                      <input type="date" id="fechaNaci" name="nacimiento" required>
+                    </div>
+                  </div>
 
-            <script>
-              const radioButtons = document.querySelectorAll('input[type="radio"]');
-              radioButtons.forEach(function (radioButton) {
-                radioButton.addEventListener('click', function () {
-                  // Desmarcar los otros radio buttons
-                  radioButtons.forEach(function (rb) {
-                    if (rb !== radioButton) {
-                      rb.checked = false;
-                    }
-                  });
-                });
-              });
-            </script>
+                  <div class="form-field">
+                    <label for="grado">Grado académico</label>
+                    <div class="input-wrap">
+                      <i class="fas fa-graduation-cap"></i>
+                      <select name="grado" id="grado">
+                        <option value="Sin Estudios">Sin estudios</option>
+                        <option value="Sexto Grado">Sexto grado</option>
+                        <option value="Bachiller">Bachiller</option>
+                        <option value="Universidad">Universidad</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
 
+                <fieldset class="form-field gender-field">
+                  <legend>Género</legend>
+                  <div class="radio-group">
+                    <label class="radio-option">
+                      <input type="radio" name="genero" value="Masculino">
+                      <span><i class="fas fa-male"></i> Masculino</span>
+                    </label>
 
+                    <label class="radio-option">
+                      <input type="radio" name="genero" value="Femenino">
+                      <span><i class="fas fa-female"></i> Femenino</span>
+                    </label>
+                  </div>
+                </fieldset>
+
+                <div class="form-field">
+                  <label for="mensaje">Mensaje *</label>
+                  <textarea id="mensaje" name="message" rows="5"
+                    placeholder="Escriba un breve mensaje sobre su experiencia o interés en trabajar con nosotros."
+                    required></textarea>
+                </div>
+
+                <div class="form-field">
+                  <label for="formFile">Adjuntar currículum</label>
+                  <label for="formFile" class="file-upload">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <span>
+                      <strong>Seleccione su currículum</strong>
+                      <small id="fileName">Ningún archivo seleccionado</small>
+                    </span>
+                  </label>
+                  <input type="file" id="formFile" name="archive" class="visually-hidden"
+                    accept=".pdf,.doc,.docx">
+                </div>
+
+                <div id="formStatus" class="form-status" aria-live="polite"></div>
+
+                <button type="submit" id="button" class="submit-button">
+                  <i class="fas fa-paper-plane"></i>
+                  <span>Enviar solicitud</span>
+                </button>
+              </form>
+            </article>
           </div>
-
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Grado Academico</label>
-            <select name="grado" id="grado">
-              <option value="Sin Estudios" selected>Sin Estudios</option>
-              <option value="Sexto Grado">Sexto Grado</option>
-              <option value="Bachiller">Bachiller</option>
-              <option value="Universidad">Universidad</option>
-            </select>
-          </div>
-
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message" required></textarea>
-          </div>
-
-          <div class="mb-3">
-            <label for="formFile" class="form-label">Adjuntar Curriculum</label>
-            <input class="form-control" type="file" id="formFile" name="archive">
-          </div>
-
-          <input type="submit" id="button" value="Enviar Mensaje" class="btn btn-success">
-
-        </form>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-
-        <script type="text/javascript">
-          emailjs.init('WtW6-3ZbgvZ8ka6QD')
-        </script>
-        <script>
-          const btn = document.getElementById('button');
-
-          document.getElementById('form')
-            .addEventListener('submit', function (event) {
-              event.preventDefault();
-
-              btn.value = 'Enviando...';
-
-              const serviceID = 'default_service';
-              const templateID = 'template_sxrumxa';
-
-              emailjs.sendForm(serviceID, templateID, this)
-                .then(() => {
-                  btn.value = 'Enviar Mensaje';
-                  alert('Su Mensaje a sido Enviado');
-                  window.location.href = "index.html";
-                }, (err) => {
-                  btn.value = 'Enviar Mensaje';
-                  alert(JSON.stringify(err));
-                });
-            });
-        </script>
-
-
+        </div>
       </div>
-
-    </header>
-
+    </section>
   </main>
 
-
-  <footer>
-
-    <div id="footer" class="clearfix">
+  <footer class="site-footer">
+    <div class="container footer-grid">
       <div>
-        <credit>&copy; Derechos Reservados RUTA 407-409 2023</credit>
-        <credit><a href="https://darosalas1390.github.io/davidWEBdesing/"><strong>David WEB Design,</strong></a>
-          <credit> <a href="https://mack8.github.io/MackDesigner/"><strong>  Mack Desing.</strong></a>
-        </credit> JUN 17, 2023
-        <div id="date"></div>
-        <script>
-          document.getElementById("date").innerHTML = new Date().toDateString()
-        </script>
+        <div class="footer-brand">RUTA 407-409</div>
+        <p>Transporte público entre San Rafael de Heredia y San José.</p>
+        <small>&copy; 2023–<span id="year"></span> Todos los derechos reservados.</small>
       </div>
 
-      <div>
-        <div id="logoWhatsapp">
-          <a href="https://wa.me/+50661597798/?text=tu%20texto%20personalizado" target="_blank">
-            <img src="img/whatsapp.png" width="30" height="30">
-          </a>
-        </div>
-        <div id="correo">
-          <a
-            href="mailto:transportesruta407-409@ice.co.cr?subject=Quejas o Consultas&body=Estimado/a cliente, Valoramos tu opinión y nos gustaría brindarte la mejor experiencia posible. Si has experimentado algún problema o insatisfacción con nuestros productos/servicios, te invitamos a compartir tu queja con nosotros. Tu retroalimentación es muy importante para nosotros y nos ayudará a mejorar nuestros estándares de calidad.">
-            <img src="img/gmail.png" width="30" height="30">
-          </a>
-        </div>
-
-        <div id="llamada">
-          <a href="tel:+50625600306">
-            <img src="img/llamada.png" width="30" height="30">
-          </a>
-        </div>
-
+      <div class="footer-contact">
+        <a href="tel:+50625600306"><i class="fas fa-phone-alt"></i> 2560-0306</a>
+        <a href="mailto:transportesruta407-409@ice.co.cr"><i class="fas fa-envelope"></i> Correo</a>
+        <a href="https://wa.me/+50661597798" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
       </div>
-
     </div>
-
-
   </footer>
 
-</body>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    emailjs.init("WtW6-3ZbgvZ8ka6QD");
 
+    const form = document.getElementById("form");
+    const submitButton = document.getElementById("button");
+    const submitText = submitButton.querySelector("span");
+    const formStatus = document.getElementById("formStatus");
+    const fileInput = document.getElementById("formFile");
+    const fileName = document.getElementById("fileName");
+
+    const nameInput = document.getElementById("nombre");
+    const lastNameInput = document.getElementById("apellidos");
+    const phoneInput = document.getElementById("telefono");
+    const emailInput = document.getElementById("email");
+    const birthInput = document.getElementById("fechaNaci");
+    const ageInput = document.getElementById("edad");
+
+    function onlyLetters(value) {
+      return /^[A-Za-zÁÉÍÓÚáéíóúÑñÜü\s]+$/.test(value.trim());
+    }
+
+    function validateField(input, isValid) {
+      input.classList.toggle("is-valid", isValid);
+      input.classList.toggle("is-invalid", !isValid);
+      return isValid;
+    }
+
+    nameInput.addEventListener("input", () => {
+      validateField(nameInput, onlyLetters(nameInput.value));
+    });
+
+    lastNameInput.addEventListener("input", () => {
+      validateField(lastNameInput, onlyLetters(lastNameInput.value));
+    });
+
+    phoneInput.addEventListener("input", () => {
+      validateField(phoneInput, /^\d{8,15}$/.test(phoneInput.value.trim()));
+    });
+
+    emailInput.addEventListener("input", () => {
+      validateField(emailInput, emailInput.validity.valid && emailInput.value.trim() !== "");
+    });
+
+    birthInput.addEventListener("change", function () {
+      const birthDate = new Date(this.value + "T00:00:00");
+      const today = new Date();
+
+      let age = today.getFullYear() - birthDate.getFullYear();
+      const monthDifference = today.getMonth() - birthDate.getMonth();
+
+      if (
+        monthDifference < 0 ||
+        (monthDifference === 0 && today.getDate() < birthDate.getDate())
+      ) {
+        age--;
+      }
+
+      ageInput.value = Number.isFinite(age) ? String(age) : "";
+    });
+
+    fileInput.addEventListener("change", function () {
+      fileName.textContent = this.files.length
+        ? this.files[0].name
+        : "Ningún archivo seleccionado";
+    });
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const validName = validateField(nameInput, onlyLetters(nameInput.value));
+      const validLastName = validateField(lastNameInput, onlyLetters(lastNameInput.value));
+      const validPhone = validateField(phoneInput, /^\d{8,15}$/.test(phoneInput.value.trim()));
+      const validEmail = validateField(
+        emailInput,
+        emailInput.validity.valid && emailInput.value.trim() !== ""
+      );
+
+      if (!form.checkValidity() || !validName || !validLastName || !validPhone || !validEmail) {
+        form.classList.add("was-validated");
+        formStatus.className = "form-status error";
+        formStatus.innerHTML =
+          "<i class='fas fa-exclamation-circle'></i><span>Revise los campos marcados antes de enviar.</span>";
+        return;
+      }
+
+      submitButton.disabled = true;
+      submitText.textContent = "Enviando...";
+      formStatus.className = "form-status loading";
+      formStatus.innerHTML =
+        "<i class='fas fa-spinner fa-spin'></i><span>Enviando su solicitud...</span>";
+
+      const serviceID = "default_service";
+      const templateID = "template_sxrumxa";
+
+      emailjs.sendForm(serviceID, templateID, this)
+        .then(() => {
+          formStatus.className = "form-status success";
+          formStatus.innerHTML =
+            "<i class='fas fa-check-circle'></i><span>Su solicitud fue enviada correctamente.</span>";
+
+          submitText.textContent = "Solicitud enviada";
+
+          setTimeout(() => {
+            window.location.href = "index.html";
+          }, 1800);
+        })
+        .catch(error => {
+          console.error(error);
+
+          submitButton.disabled = false;
+          submitText.textContent = "Enviar solicitud";
+          formStatus.className = "form-status error";
+          formStatus.innerHTML =
+            "<i class='fas fa-exclamation-circle'></i><span>No fue posible enviar la solicitud. Inténtelo nuevamente.</span>";
+        });
+    });
+  </script>
+</body>
 </html>

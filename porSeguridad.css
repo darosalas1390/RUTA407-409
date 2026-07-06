@@ -1,59 +1,211 @@
-#contSeguridad h1 {
-  margin-left: 10%;
-  color: yellow;
+.safety-hero {
+  padding: 4rem 0 2rem;
 }
 
-#contSeguridad p {
-  color: white;
+.safety-hero-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem;
+  border: 1px solid var(--line);
+  border-radius: 26px;
+  background:
+    radial-gradient(circle at 84% 16%, rgba(14, 165, 233, .18), transparent 30%),
+    linear-gradient(135deg, rgba(15, 23, 42, .98), rgba(11, 18, 32, .98));
+  box-shadow: var(--shadow);
+}
+
+.safety-hero-panel h1 {
+  margin: .45rem 0 .8rem;
+  font-size: clamp(2.5rem, 5vw, 4.8rem);
+  line-height: 1;
+  font-weight: 850;
+}
+
+.safety-hero-panel p {
+  max-width: 760px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+
+.safety-hero-icon {
+  width: 110px;
+  height: 110px;
+  flex: 0 0 110px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-size: 2.5rem;
+  border-radius: 28px;
+  background: linear-gradient(135deg, #1d4ed8, #0891b2);
+  box-shadow: 0 18px 35px rgba(37, 99, 235, .28);
+}
+
+.safety-section {
+  padding: 2rem 0 5rem;
+}
+
+.safety-card {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.safety-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  padding: 1.6rem;
+  border-bottom: 1px solid var(--line);
+  background:
+    radial-gradient(circle at 92% 15%, rgba(245, 158, 11, .14), transparent 30%),
+    rgba(15, 23, 42, .92);
+}
+
+.safety-card-header h2 {
+  margin: .35rem 0 .4rem;
+  font-size: 1.85rem;
+  font-weight: 850;
+}
+
+.safety-card-header p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.safety-card-icon {
+  width: 58px;
+  height: 58px;
+  flex: 0 0 58px;
+  display: grid;
+  place-items: center;
+  color: #fde68a;
+  border-radius: 16px;
+  background: rgba(245, 158, 11, .14);
+  border: 1px solid rgba(245, 158, 11, .28);
+}
+
+.safety-list-wrapper {
+  padding: 1.25rem;
+}
+
+.safety-list {
+  display: grid;
+  gap: .9rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: safety-counter;
+}
+
+.safety-item {
+  counter-increment: safety-counter;
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: .9rem;
+  align-items: center;
+  min-height: 74px;
+  padding: .9rem 1rem;
+  color: #e2e8f0;
+  border: 1px solid rgba(148, 163, 184, .14);
+  border-radius: 17px;
+  background: #0b1220;
+  transition: transform .18s ease, border-color .18s ease, background .18s ease;
+}
+
+.safety-item:hover {
+  transform: translateY(-2px);
+  border-color: rgba(56, 189, 248, .34);
+  background: rgba(15, 23, 42, .95);
+}
+
+.safety-number {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-weight: 850;
+  border-radius: 13px;
+  background: linear-gradient(135deg, #1d4ed8, #0891b2);
+  box-shadow: 0 10px 20px rgba(37, 99, 235, .20);
+}
+
+.safety-number::before {
+  content: counter(safety-counter);
+}
+
+.safety-text {
+  line-height: 1.65;
+  font-size: 1rem;
+}
+
+.loading-state,
+.empty-state,
+.error-state {
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .7rem;
+  padding: 1.2rem;
   text-align: center;
-  font-size: 25px;
+  border-radius: 16px;
+  background: #0b1220;
+  border: 1px solid rgba(148, 163, 184, .14);
 }
 
-#contSeguridad {
-  margin-top: 20px;
+.loading-state,
+.empty-state {
+  color: var(--muted);
 }
 
-#contSeguridadLista h3 {
-  text-align: center;
-  color: white;
+.error-state {
+  color: #fecaca;
+  background: rgba(69, 10, 10, .45);
+  border-color: rgba(248, 113, 113, .24);
 }
 
-#contSeguridadLista h2 {
-  text-align: center;
-  color: white;
-}
-
-#listaSeguridad {
-  margin-top: 50px;
-
-}
-
-#listaSeguridad {
-  text-align: center;
-  font-size: 25px;
-  margin-top: 30px;
-}
-
-#seguridadContainer {
-  font-size: 24px;
-  /* Tamaño de fuente deseado */
-  text-align: center;
-  margin-top: 20px;
-}
-
-@media screen and (max-width:768px) {
-
-  #contSeguridadLista {
-    margin-bottom: 60px;
+@media (max-width: 767px) {
+  .safety-hero {
+    padding-top: 2.7rem;
   }
 
-  #contSeguridadLista h3 {
+  .safety-hero-panel {
+    padding: 1.4rem;
+  }
+
+  .safety-hero-icon {
     display: none;
   }
 
-  #contSeguridad h1 {
-    text-align: center;
-    color: yellow;
-    margin-left: 0%;
+  .safety-card-header {
+    align-items: flex-start;
+    padding: 1.25rem;
+  }
+
+  .safety-card-icon {
+    width: 48px;
+    height: 48px;
+    flex-basis: 48px;
+  }
+
+  .safety-list-wrapper {
+    padding: .85rem;
+  }
+
+  .safety-item {
+    grid-template-columns: 42px 1fr;
+    padding: .8rem;
+  }
+
+  .safety-number {
+    width: 38px;
+    height: 38px;
   }
 }

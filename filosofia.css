@@ -1,57 +1,218 @@
-#tituloFilosofia h1 {
-  margin-left: 10%;
-  color: yellow;
+.philosophy-hero {
+  padding: 4rem 0 2rem;
 }
 
-#contPrincipalFilosofia p {
-  color: white;
-  text-align: center;
-  font-size: 25px;
+.hero-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem;
+  border: 1px solid var(--line);
+  border-radius: 26px;
+  background:
+    radial-gradient(circle at 85% 20%, rgba(14, 165, 233, .18), transparent 30%),
+    linear-gradient(135deg, rgba(15, 23, 42, .98), rgba(11, 18, 32, .98));
+  box-shadow: var(--shadow);
 }
 
-#contPrincipalFilosofia {
-  margin-top: 20px;
+.hero-panel h1 {
+  margin: .45rem 0 .8rem;
+  font-size: clamp(2.4rem, 5vw, 4.7rem);
+  line-height: 1;
+  font-weight: 850;
 }
 
-#contMision h3 {
-  text-align: center;
-  color: white;
+.hero-panel p {
+  max-width: 760px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.08rem;
 }
 
-#contMision h2 {
-  text-align: center;
-  color: white;
+.hero-symbol {
+  width: 110px;
+  height: 110px;
+  flex: 0 0 110px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-size: 2.5rem;
+  border-radius: 28px;
+  background: linear-gradient(135deg, #1d4ed8, #0891b2);
+  box-shadow: 0 18px 35px rgba(37, 99, 235, .28);
 }
 
-#listaMision {
-  text-align: center;
-  font-size: 25px;
-  margin-top: 50px;
-
+.philosophy-section {
+  padding: 2rem 0 5rem;
 }
 
-#misionesContainer {
-  font-size: 24px;
-  /* Tamaño de fuente deseado */
-  text-align: center;
-  margin-top: 30px;
+.content-card {
+  height: 100%;
+  padding: 1.8rem;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
 }
 
-@media screen and (max-width:768px) {
+.content-card h2 {
+  margin: .45rem 0 .85rem;
+  font-size: 1.85rem;
+  font-weight: 800;
+}
 
-  #contMision {
-    margin-bottom: 60px;
+.content-card > p,
+.mission-header p {
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.card-icon {
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 1.25rem;
+  color: #fff;
+  font-size: 1.3rem;
+  border-radius: 16px;
+}
+
+.gradient-deep-blue {
+  background: linear-gradient(135deg, #1d4ed8 0%, #0891b2 100%);
+}
+
+.gradient-teal {
+  background: linear-gradient(135deg, #0f766e 0%, #14b8a6 100%);
+}
+
+.value-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .65rem;
+  margin-top: 1.4rem;
+}
+
+.value-chips span {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  padding: .58rem .8rem;
+  color: #cbd5e1;
+  font-size: .88rem;
+  font-weight: 700;
+  border-radius: 999px;
+  background: rgba(30, 41, 59, .72);
+  border: 1px solid rgba(148, 163, 184, .16);
+}
+
+.value-chips i {
+  color: #7dd3fc;
+}
+
+.mission-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.25rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.mission-list {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.35rem;
+}
+
+.mission-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 1.1rem;
+  border-radius: 18px;
+  background: #0b1220;
+  border: 1px solid rgba(148, 163, 184, .14);
+  transition: .18s ease;
+}
+
+.mission-item:hover {
+  transform: translateY(-2px);
+  border-color: rgba(59, 130, 246, .30);
+  box-shadow: 0 14px 28px rgba(2, 6, 23, .26);
+}
+
+.mission-number {
+  min-width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  color: #7dd3fc;
+  font-weight: 850;
+  border-radius: 14px;
+  background: rgba(14, 165, 233, .13);
+  border: 1px solid rgba(14, 165, 233, .26);
+}
+
+.mission-item h3 {
+  margin: .1rem 0 .35rem;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.mission-item p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.mission-loading,
+.mission-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .7rem;
+  min-height: 130px;
+  color: var(--muted);
+  border-radius: 18px;
+  background: #0b1220;
+  border: 1px dashed rgba(148, 163, 184, .20);
+}
+
+.mission-empty.error {
+  color: #fecaca;
+  border-color: rgba(248, 113, 113, .25);
+  background: rgba(127, 29, 29, .24);
+}
+
+@media (max-width: 767px) {
+  .philosophy-hero {
+    padding-top: 2.7rem;
   }
 
-  #contMision h3 {
+  .hero-panel {
+    padding: 1.4rem;
+  }
+
+  .hero-symbol {
     display: none;
   }
 
-  #tituloFilosofia h1 {
-    text-align: center;
-    color: yellow;
-    margin-left: 0%;
+  .content-card {
+    padding: 1.25rem;
   }
 
+  .mission-header {
+    align-items: center;
+  }
 
+  .mission-item {
+    padding: .95rem;
+  }
+
+  .mission-number {
+    min-width: 42px;
+    height: 42px;
+  }
 }

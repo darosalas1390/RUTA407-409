@@ -1,234 +1,231 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="shortcut icon" href="img/logo.png">
-  <title>RUTA 407-409</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <link rel="stylesheet" type="text/css" href="ley7600.css">
+  <title>Ley 7600 · RUTA 407-409</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <link rel="stylesheet" type="text/css" href="banner.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="ley7600.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
 </head>
 
 <body>
+  <nav class="navbar navbar-expand-lg navbar-dark topbar sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-3" href="index.html">
+        <img src="img/logo.png" alt="Logo Ruta 407-409" class="brand-logo">
+        <div>
+          <span class="brand-title">RUTA 407-409</span>
+          <small class="brand-subtitle">San Rafael · San José</small>
+        </div>
+      </a>
 
-  <nav class="menuNavegacion" id="nave">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="raw">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="quienesSomos.html">Quiénes somos</a></li>
+          <li class="nav-item"><a class="nav-link" href="tarifas.html">Tarifas</a></li>
+          <li class="nav-item"><a class="nav-link" href="horarios.html">Horarios</a></li>
+          <li class="nav-item"><a class="nav-link active" href="ley7600.html">Ley 7600</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
 
-      <div class="col-xl-12 col-xs-12 col-md-12 col-sm-12 col-lg-12 col-xxl-12">
-
-        <nav class="navbar navbar-expand-lg  ">
-          <div class="container-fluid" id="fondoBanner">
-            <a class="navbar-brand" href="index.html">
-              <img src="img/logo.png" alt="logoBus" width="130" height="120" style="border-radius: 50%;">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              Nuestra gente
             </a>
-            <div id="tituloNav">
-              <h1><strong>RUTA 407 - 409</strong>
-                <p>SAN RAFAEL - SAN JOSE</p>
-              </h1>
-            </div>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="filosofiaMision.html">Filosofía y misión</a></li>
+              <li><a class="dropdown-item" href="porSeguridad.html">Por su seguridad</a></li>
+            </ul>
+          </li>
 
-            <button id="botonMenu" class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+          <li class="nav-item"><a class="nav-link" href="trabajo.html">Empleo</a></li>
+          <li class="nav-item"><a class="nav-link" href="contactenos.html">Contáctenos</a></li>
+        </ul>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="quienesSomos.html">Quienes Somos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="tarifas.html">Tarifas</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="horarios.html">Horarios</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="ley7600.html">Ley 7600</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="galeria.html">Galeria</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false"> Nuestra Gente </a>
-                  <ul class="dropdown-menu" id="fondoBanner">
-                    <li id="menuFilosofia"><a class="dropdown-item" href="filosofiaMision.html">Filosofia y Mision</a>
-                    </li>
-                    <li id="menuFilosofia"><a class="dropdown-item" href="porSeguridad.html">Por su Seguridad</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="trabajo.html">Empleo</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contactenos.html">Contactenos</a>
-                </li>
-              </ul>
-
-              <div class="col-xs-12 col-xl-2" id="consultas">
-
-                <div id="whatsappBanner">
-                  <a href="https://wa.me/+50661597798/?text=tu%20texto%20personalizado" target="_blank">
-                    <img src="img/whatsapp.png" width="30" height="30">
-                  </a>
-                </div>
-
-                <div id="correoBanner">
-                  <a
-                    href="mailto:transportesruta407-409@ice.co.cr?subject=Quejas o Consultas&body=Estimado/a cliente, Valoramos tu opinión y nos gustaría brindarte la mejor experiencia posible. Si has experimentado algún problema o insatisfacción con nuestros productos/servicios, te invitamos a compartir tu queja con nosotros. Tu retroalimentación es muy importante para nosotros y nos ayudará a mejorar nuestros estándares de calidad.">
-                    <img src="img/gmail.png" width="30" height="30">
-                  </a>
-                </div>
-
-                <div id="llamadaBanner">
-                  <a href="tel:+50625600306">
-                    <img src="img/llamada.png" width="30" height="30">
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </nav>
+        <div class="social-links ms-lg-3 mt-3 mt-lg-0">
+          <a href="https://wa.me/+50661597798" target="_blank" aria-label="WhatsApp">
+            <img src="img/whatsapp.png" alt="">
+          </a>
+          <a href="mailto:transportesruta407-409@ice.co.cr" aria-label="Correo">
+            <img src="img/gmail.png" alt="">
+          </a>
+          <a href="tel:+50625600306" aria-label="Teléfono">
+            <img src="img/llamada.png" alt="">
+          </a>
+        </div>
       </div>
     </div>
   </nav>
 
-
   <main>
-
-
-    <header class="contenidoPrincipal" id="contPrincipal">
-
-      <div class="row">
-
-        <div class="col-xl-12 col-xs-12" id="contLey7600">
-
-          <h1>LEY 7600</h1>
-
-          <div class="container">
-            <p> Transportes Ruta 407-409 cumple con los estándares de la ley 7600 para personas con discapacidad,
-              contamos actualmente
-              con una moderna flotilla de autobuses adaptados según esta ley.</p>
-            <p>Adicional les recordamos a nuestros usuarios que los primeros asientos según esta ley son preferenciales
-              para personas discapacitadas y señoras embarazadas
-              y los tercer asiento para adultos mayores, por lo tanto le rogamos ceder el campo.
+    <section class="accessibility-hero">
+      <div class="container">
+        <div class="accessibility-hero-panel">
+          <div>
+            <span class="eyebrow">Accesibilidad e inclusión</span>
+            <h1>Ley 7600</h1>
+            <p>
+              Transportes Ruta 407-409 cumple con los estándares establecidos para facilitar
+              el acceso y la movilidad de las personas con discapacidad.
             </p>
+          </div>
+
+          <div class="accessibility-hero-icon">
+            <i class="fas fa-universal-access"></i>
           </div>
         </div>
       </div>
-    </header>
+    </section>
 
-    <header id="contSecundario">
-      <div class="col-xl-12 col-xs-12">
-        <div>
-          <h1>
-            _____________________________________________________________________________________________________________________________
-          </h1>
-        </div>
-        <div>
-          <h2>NUESTRAS UNIDADES CUMPLEN CON LOS ESTANDARES</h2>
-        </div>
-        <br>
-        <div class="video-container">
-          <video class="col-xl-4 col-xs-12 container" autoplay loop>
-            <source src="vid/rampa.mp4" type="video/mp4">
-            <source src="vid/rampa.mp4" type="video/ogg">
-            Your browser does not support the video tag.
-          </video>
-        </div>
+    <section class="accessibility-content">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-5">
+            <article class="info-card-access">
+              <span class="eyebrow">Nuestro compromiso</span>
+              <h2>Transporte accesible para todas las personas</h2>
 
-        <div class="video-containerYouTube">
-          <iframe class="col-xl-4 col-xs-12 container"
-            src="https://www.youtube.com/embed/FQXMUWjJixQ?playlist=FQXMUWjJixQ&loop=1" type="video/youtube"></iframe>
+              <p>
+                Contamos con una flotilla moderna de autobuses adaptados para facilitar el acceso
+                y el desplazamiento de personas con discapacidad.
+              </p>
+
+              <p>
+                Recordamos a nuestros usuarios que los primeros asientos son preferenciales para
+                personas con discapacidad y mujeres embarazadas, mientras que los terceros asientos
+                están destinados a personas adultas mayores.
+              </p>
+
+              <div class="accessibility-points">
+                <div class="accessibility-point">
+                  <span><i class="fas fa-wheelchair"></i></span>
+                  <div>
+                    <h3>Acceso adaptado</h3>
+                    <p>Unidades preparadas para mejorar la movilidad y el abordaje.</p>
+                  </div>
+                </div>
+
+                <div class="accessibility-point">
+                  <span><i class="fas fa-chair"></i></span>
+                  <div>
+                    <h3>Asientos preferenciales</h3>
+                    <p>Espacios destinados a quienes más los necesitan.</p>
+                  </div>
+                </div>
+
+                <div class="accessibility-point">
+                  <span><i class="fas fa-hands-helping"></i></span>
+                  <div>
+                    <h3>Atención respetuosa</h3>
+                    <p>Promovemos una cultura de respeto, ayuda e inclusión.</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-7">
+            <article class="media-card">
+              <div class="media-card-header">
+                <div>
+                  <span class="eyebrow">Nuestras unidades</span>
+                  <h2>Cumplimos con los estándares</h2>
+                </div>
+
+                <div class="media-icon">
+                  <i class="fas fa-bus-alt"></i>
+                </div>
+              </div>
+
+              <div class="media-grid">
+                <div class="video-panel">
+                  <div class="media-label">
+                    <i class="fas fa-video"></i>
+                    Video demostrativo
+                  </div>
+
+                  <video controls muted loop playsinline poster="img/discapacitado.png">
+                    <source src="vid/rampa.mp4" type="video/mp4">
+                    Su navegador no puede reproducir este video.
+                  </video>
+                </div>
+
+                <div class="video-panel">
+                  <div class="media-label">
+                    <i class="fab fa-youtube"></i>
+                    Video informativo
+                  </div>
+
+                  <div class="youtube-wrap">
+                    <iframe
+                      src="https://www.youtube.com/embed/FQXMUWjJixQ?playlist=FQXMUWjJixQ&loop=1"
+                      title="Información sobre accesibilidad"
+                      loading="lazy"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen>
+                    </iframe>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
         </div>
       </div>
+    </section>
 
-    </header>
+    <section class="download-section">
+      <div class="container">
+        <div class="download-card">
+          <div class="download-icon">
+            <img src="img/discapacitado.png" alt="">
+          </div>
 
-    <header class="container" id="descargaLey7600">
+          <div class="download-copy">
+            <span class="eyebrow">Documento oficial</span>
+            <h2>Descargar Ley 7600</h2>
+            <p>Consulte el documento en formato PDF para conocer más sobre esta normativa.</p>
+          </div>
 
-      <div class="row">
-
-        <div class="col-xl-4 col-xs-12"></div>
-
-
-        <div class="col-xl-4 col-xs-12">
-          <a href="doc/LEY7600.pdf" download>
-            <img src="img/discapacitado.png" alt="discapacidad">
+          <a href="doc/LEY7600.pdf" download class="download-button">
+            <i class="fas fa-download"></i>
+            Descargar PDF
           </a>
-          <p><strong>Aca podran descargar el documento de la Ley 7600.</strong> </p>
         </div>
-
-
-        <div class="col-xl-4 col-xs-12">
-
-        </div>
-
       </div>
-
-    </header>
-
-
+    </section>
   </main>
 
-
-
-  <footer>
-
-    <div id="footer" class="clearfix">
+  <footer class="site-footer">
+    <div class="container footer-grid">
       <div>
-        <credit>&copy; Derechos Reservados RUTA 407-409 2023</credit>
-        <credit><a href="https://darosalas1390.github.io/davidWEBdesing/"><strong>David WEB Design,</strong></a>
-          <credit> <a href="https://mack8.github.io/MackDesigner/"><strong>  Mack Desing.</strong></a>
-        </credit> JUN 17, 2023
-        <div id="date"></div>
-        <script>
-          document.getElementById("date").innerHTML = new Date().toDateString()
-        </script>
+        <div class="footer-brand">RUTA 407-409</div>
+        <p>Transporte público entre San Rafael de Heredia y San José.</p>
+        <small>&copy; 2023–<span id="year"></span> Todos los derechos reservados.</small>
       </div>
 
-      <div>
-        <div id="logoWhatsapp">
-          <a href="https://wa.me/+50661597798/?text=tu%20texto%20personalizado" target="_blank">
-            <img src="img/whatsapp.png" width="30" height="30">
-          </a>
-        </div>
-        <div id="correo">
-          <a
-            href="mailto:transportesruta407-409@ice.co.cr?subject=Quejas o Consultas&body=Estimado/a cliente, Valoramos tu opinión y nos gustaría brindarte la mejor experiencia posible. Si has experimentado algún problema o insatisfacción con nuestros productos/servicios, te invitamos a compartir tu queja con nosotros. Tu retroalimentación es muy importante para nosotros y nos ayudará a mejorar nuestros estándares de calidad.">
-            <img src="img/gmail.png" width="30" height="30">
-          </a>
-        </div>
-
-        <div id="llamada">
-          <a href="tel:+50625600306">
-            <img src="img/llamada.png" width="30" height="30">
-          </a>
-        </div>
-
+      <div class="footer-contact">
+        <a href="tel:+50625600306"><i class="fas fa-phone-alt"></i> 2560-0306</a>
+        <a href="mailto:transportesruta407-409@ice.co.cr"><i class="fas fa-envelope"></i> Correo</a>
+        <a href="https://wa.me/+50661597798" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
       </div>
-
     </div>
-
-
   </footer>
 
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
-
 </html>
