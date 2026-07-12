@@ -11,8 +11,16 @@
   border: 1px solid var(--line);
   border-radius: 26px;
   background:
-    radial-gradient(circle at 84% 16%, rgba(245, 158, 11, .16), transparent 30%),
-    linear-gradient(135deg, rgba(15, 23, 42, .98), rgba(11, 18, 32, .98));
+    radial-gradient(
+      circle at 84% 16%,
+      rgba(245, 158, 11, .16),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      rgba(15, 23, 42, .98),
+      rgba(11, 18, 32, .98)
+    );
   box-shadow: var(--shadow);
 }
 
@@ -39,12 +47,16 @@
   color: #fff;
   font-size: 2.45rem;
   border-radius: 28px;
-  background: linear-gradient(135deg, #b45309, #f59e0b);
+  background: linear-gradient(
+    135deg,
+    #b45309,
+    #f59e0b
+  );
   box-shadow: 0 18px 35px rgba(245, 158, 11, .24);
 }
 
 .fare-section {
-  padding: 2rem 0 2rem;
+  padding: 2rem 0;
 }
 
 .fare-card {
@@ -87,6 +99,16 @@
   border: 1px solid rgba(245, 158, 11, .28);
 }
 
+/* Contenedor de la tabla */
+
+.fare-table-container {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Tabla de tarifas */
+
 .fare-table {
   width: 100%;
   min-width: 760px;
@@ -98,6 +120,7 @@
 .fare-table td {
   padding: 1rem;
   text-align: left;
+  vertical-align: middle;
   border-bottom: 1px solid rgba(148, 163, 184, .12);
   border-right: 1px solid rgba(148, 163, 184, .08);
 }
@@ -123,15 +146,13 @@
   background: rgba(37, 99, 235, .10);
 }
 
-.fare-table td {
-  vertical-align: middle;
-}
-
 .route-summary td {
   color: #d9f99d;
   font-weight: 750;
   background: rgba(101, 163, 13, .08);
 }
+
+/* Estado de carga y error */
 
 .table-state {
   display: flex;
@@ -149,6 +170,8 @@
   background: rgba(69, 10, 10, .42);
   border-top: 1px solid rgba(248, 113, 113, .18);
 }
+
+/* Publicación oficial */
 
 .publication-card {
   display: grid;
@@ -175,7 +198,7 @@
 }
 
 .publication-card h3 {
-  margin: .3rem 0 .3rem;
+  margin: .3rem 0;
   font-size: 1.15rem;
   font-weight: 800;
 }
@@ -191,11 +214,14 @@
   gap: .45rem;
   color: #7dd3fc;
   font-weight: 800;
+  text-decoration: none;
 }
 
 .publication-link:hover {
   color: #bae6fd;
 }
+
+/* Descarga */
 
 .download-section {
   padding: 1rem 0 5rem;
@@ -209,7 +235,11 @@
   padding: 1.5rem;
   border-radius: 22px;
   background:
-    radial-gradient(circle at 85% 20%, rgba(245, 158, 11, .14), transparent 28%),
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(245, 158, 11, .14),
+      transparent 28%
+    ),
     var(--surface);
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
@@ -251,10 +281,17 @@
   color: #fff;
   font-weight: 800;
   white-space: nowrap;
+  text-decoration: none;
   border-radius: 999px;
-  background: linear-gradient(135deg, #b45309, #f59e0b);
+  background: linear-gradient(
+    135deg,
+    #b45309,
+    #f59e0b
+  );
   box-shadow: 0 12px 25px rgba(245, 158, 11, .20);
-  transition: .18s ease;
+  transition:
+    transform .18s ease,
+    box-shadow .18s ease;
 }
 
 .download-button:hover {
@@ -263,22 +300,162 @@
   box-shadow: 0 16px 30px rgba(245, 158, 11, .27);
 }
 
+/* Tablets */
+
+@media (max-width: 991px) {
+  .fare-table {
+    min-width: 680px;
+  }
+
+  .fare-table th,
+  .fare-table td {
+    padding: .85rem .75rem;
+  }
+}
+
+/* Celulares */
+
 @media (max-width: 767px) {
   .fare-hero {
-    padding-top: 2.7rem;
+    padding: 2.7rem 0 1.5rem;
   }
 
   .fare-hero-panel {
     padding: 1.4rem;
+    border-radius: 20px;
+  }
+
+  .fare-hero-panel h1 {
+    font-size: clamp(2.2rem, 12vw, 3.2rem);
+  }
+
+  .fare-hero-panel p {
+    font-size: .96rem;
+    line-height: 1.55;
   }
 
   .fare-hero-icon {
     display: none;
   }
 
+  .fare-section {
+    padding-top: 1.25rem;
+  }
+
+  .fare-card {
+    overflow: visible;
+    border-radius: 20px;
+    background: transparent;
+    box-shadow: none;
+  }
+
   .fare-card-header {
     align-items: flex-start;
     padding: 1.2rem;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    background: var(--surface);
+    box-shadow: var(--shadow);
+  }
+
+  .fare-card-header h2 {
+    font-size: 1.45rem;
+  }
+
+  .fare-card-header p {
+    font-size: .9rem;
+    line-height: 1.5;
+  }
+
+  .fare-card-icon {
+    width: 48px;
+    height: 48px;
+    flex-basis: 48px;
+  }
+
+  /*
+    La tabla deja de mostrarse como tabla.
+    Cada fila se convierte en una tarjeta.
+  */
+
+  .fare-table-container {
+    overflow: visible;
+    margin-top: 1rem;
+  }
+
+  .fare-table {
+    display: block;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .fare-table thead {
+    display: none;
+  }
+
+  .fare-table tbody {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .fare-table tbody tr {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    background: var(--surface);
+    box-shadow: 0 12px 26px rgba(2, 6, 23, .22);
+  }
+
+  .fare-table tbody tr:nth-child(even),
+  .fare-table tbody tr:hover {
+    background: var(--surface);
+  }
+
+  .fare-table td {
+    display: grid;
+    grid-template-columns: minmax(110px, 38%) 1fr;
+    gap: .75rem;
+    align-items: start;
+    width: 100%;
+    padding: .85rem 1rem;
+    text-align: right;
+    font-size: .9rem;
+    line-height: 1.45;
+    overflow-wrap: anywhere;
+    border-right: 0;
+    border-bottom: 1px solid rgba(148, 163, 184, .12);
+  }
+
+  .fare-table td:last-child {
+    border-bottom: 0;
+  }
+
+  .fare-table td::before {
+    content: attr(data-label);
+    color: #bfdbfe;
+    font-size: .7rem;
+    font-weight: 800;
+    letter-spacing: .045em;
+    line-height: 1.4;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  .route-summary td {
+    color: #d9f99d;
+    background: rgba(101, 163, 13, .05);
+  }
+
+  .table-state {
+    min-height: 70px;
+    margin-top: 1rem;
+    padding: .9rem;
+    font-size: .85rem;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    background: var(--surface);
   }
 
   .publication-card,
@@ -296,5 +473,41 @@
   .download-button {
     justify-content: center;
     width: 100%;
+  }
+
+  .download-section {
+    padding-bottom: 3.5rem;
+  }
+}
+
+/* Celulares pequeños */
+
+@media (max-width: 420px) {
+  .fare-hero-panel,
+  .fare-card-header,
+  .publication-card,
+  .download-card {
+    padding: 1rem;
+  }
+
+  .fare-card-header {
+    gap: .8rem;
+  }
+
+  .fare-card-icon {
+    width: 42px;
+    height: 42px;
+    flex-basis: 42px;
+  }
+
+  .fare-table td {
+    grid-template-columns: 100px 1fr;
+    gap: .55rem;
+    padding: .75rem .85rem;
+    font-size: .82rem;
+  }
+
+  .fare-table td::before {
+    font-size: .65rem;
   }
 }
